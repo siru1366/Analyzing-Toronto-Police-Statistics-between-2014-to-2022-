@@ -8,19 +8,31 @@
 # Any other information needed? [...UPDATE THIS...]
 
 
+install.packages("opendatatoronto")
+install.packages("knitr")
+install.packages("tidyverse")
+install.packages("readr")
+
+
 #### Workspace setup ####
 library(opendatatoronto)
 library(tidyverse)
-# [...UPDATE THIS...]
-
-#### Download data ####
-# [...ADD CODE HERE TO DOWNLOAD...]
+library(knitr)
+library(readr)
 
 
 
-#### Save data ####
-# [...UPDATE THIS...]
-# change the_raw_data to whatever name you assigned when you downloaded it.
-write_csv(the_raw_data, "inputs/data/raw_data.csv") 
+
+police_resources <- list_package_resources("police-annual-statistical-report-arrested-and-charged-persons")
+str(police_resources)
+
+police_data <- get_resource(police_resources[1, ])
+str(police_data)
+
+write_csv(
+  x = police_data,
+  file = "inputs/data/police_data.csv"
+)
+
 
          
