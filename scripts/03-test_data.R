@@ -9,7 +9,13 @@
 
 
 #### Workspace setup ####
+install.packages("tidyverse")
 library(tidyverse)
 # [...UPDATE THIS...]
 
 #### Test data ####
+
+simulated_aggregate_data$sex |>
+  unique() == c("male", "female")
+simulated_aggregate_data$year |> min() == 2014
+simulated_aggregate_data$year |> max() == 2022

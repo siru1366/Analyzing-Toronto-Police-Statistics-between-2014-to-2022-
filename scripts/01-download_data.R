@@ -23,7 +23,8 @@ library(readr)
 
 
 
-police_resources <- list_package_resources("police-annual-statistical-report-arrested-and-charged-persons")
+police_resources <- 
+  list_package_resources("police-annual-statistical-report-arrested-and-charged-persons")
 str(police_resources)
 
 police_data <- get_resource(police_resources[1, ])
