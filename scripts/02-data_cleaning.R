@@ -89,7 +89,95 @@ year_2021_data$year <- c("2021")
 
 head(year_2021_data)
 
-combinde_data<-rbind(year_2022_data,year_2021_data)
+year_2020_data <-
+  read_csv(file = here::here(
+    "outputs/data/clean_data.csv"),
+    show_col_types = FALSE
+  )
+year_2020_data <-
+  year_2020_data |>
+  filter(arrest_year == 2020) |> count(age_cohort)
+year_2020_data$year <- c("2020")  
+
+head(year_2020_data)
+
+year_2019_data <-
+  read_csv(file = here::here(
+    "outputs/data/clean_data.csv"),
+    show_col_types = FALSE
+  )
+year_2019_data <-
+  year_2019_data |>
+  filter(arrest_year == 2019) |> count(age_cohort)
+year_2019_data$year <- c("2019")  
+
+head(year_2019_data)
+
+year_2018_data <-
+  read_csv(file = here::here(
+    "outputs/data/clean_data.csv"),
+    show_col_types = FALSE
+  )
+year_2018_data <-
+  year_2018_data |>
+  filter(arrest_year == 2018) |> count(age_cohort)
+year_2018_data$year <- c("2018")  
+
+head(year_2018_data)
+
+year_2017_data <-
+  read_csv(file = here::here(
+    "outputs/data/clean_data.csv"),
+    show_col_types = FALSE
+  )
+year_2017_data <-
+  year_2017_data |>
+  filter(arrest_year == 2017) |> count(age_cohort)
+year_2017_data$year <- c("2017")  
+
+head(year_2017_data)
+
+year_2016_data <-
+  read_csv(file = here::here(
+    "outputs/data/clean_data.csv"),
+    show_col_types = FALSE
+  )
+year_2016_data <-
+  year_2016_data |>
+  filter(arrest_year == 2016) |> count(age_cohort)
+year_2016_data$year <- c("2016")  
+
+head(year_2016_data)
+
+year_2015_data <-
+  read_csv(file = here::here(
+    "outputs/data/clean_data.csv"),
+    show_col_types = FALSE
+  )
+year_2015_data <-
+  year_2015_data |>
+  filter(arrest_year == 2015) |> count(age_cohort)
+year_2015_data$year <- c("2015")  
+
+head(year_2015_data)
+
+year_2014_data <-
+  read_csv(file = here::here(
+    "outputs/data/clean_data.csv"),
+    show_col_types = FALSE
+  )
+year_2014_data <-
+  year_2014_data |>
+  filter(arrest_year == 2014,
+         age_cohort %in% c("18 to 24", "25 to 34","35 to 44","45 to 54",
+                      "55 to 64","65+","<18")) |> count(age_cohort)
+year_2014_data$year <- c("2014")  
+
+head(year_2014_data)
+
+combinde_data<-rbind(year_2022_data,year_2021_data,year_2020_data,year_2019_data,
+                     year_2018_data,year_2017_data,year_2016_data,year_2015_data,
+                     year_2014_data)
 head(combinde_data)
 write_csv(
   x = combinde_data,

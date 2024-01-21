@@ -24,9 +24,10 @@ library(palmerpenguins)
 
 # Introduction
 
-## 
 
-Criminal statistics, particularly within the domain of policing, serve as a vital instrument in comprehending and addressing patterns of criminal behavior within society. Toronto Police statistics, as an exemplar in this context, offer a meticulous portrayal of the demographic dynamics and criminal typologies characterizing arrests within the city from the temporal span of 2014 to 2022. Such statistical analyses provide a nuanced understanding of the intricate interplay between law enforcement efforts and the evolving landscape of criminal activities. \## The field of criminal statistics functions as a branch of criminology, offering empirical insights into the prevalence, distribution, and trends of criminal incidents. Policing agencies, including the Toronto Police, routinely engage in the systematic collection, analysis, and interpretation of data derived from their law enforcement activities. These statistics encapsulate a multifaceted depiction of criminal occurrences, spanning diverse facets such as the demographics of apprehended individuals, the temporal distribution of criminal incidents, and the categorization of offenses according to their nature and severity. \## Toronto Police statistics, with their temporal range extending from 2014 to 2022, encapsulate an extensive period characterized by shifts in societal dynamics, legislative alterations, and advancements in law enforcement strategies. The juxtaposition of gender, age cohorts, and crime types in these statistics elucidates the differential impact of law enforcement efforts across various demographic groups and crime categories. Such granularity facilitates a more nuanced understanding of the socio-criminological landscape, enabling policymakers, researchers, and law enforcement agencies to tailor interventions effectively.
+Criminal statistics, particularly within the domain of policing, serve as a vital instrument in comprehending and addressing patterns of criminal behavior within society. Toronto Police statistics, as an exemplar in this context, offer a meticulous portrayal of the demographic dynamics and criminal typologies characterizing arrests within the city from the temporal span of 2014 to 2022. Such statistical analyses provide a nuanced understanding of the intricate interplay between law enforcement efforts and the evolving landscape of criminal activities.  
+\ The field of criminal statistics functions as a branch of criminology, offering empirical insights into the prevalence, distribution, and trends of criminal incidents. Policing agencies, including the Toronto Police, routinely engage in the systematic collection, analysis, and interpretation of data derived from their law enforcement activities. These statistics encapsulate a multifaceted depiction of criminal occurrences, spanning diverse facets such as the demographics of apprehended individuals, the temporal distribution of criminal incidents, and the categorization of offenses according to their nature and severity.  
+\ Toronto Police statistics, with their temporal range extending from 2014 to 2022, encapsulate an extensive period characterized by shifts in societal dynamics, legislative alterations, and advancements in law enforcement strategies. The juxtaposition of gender, age cohorts, and crime types in these statistics elucidates the differential impact of law enforcement efforts across various demographic groups and crime categories. Such granularity facilitates a more nuanced understanding of the socio-criminological landscape, enabling policymakers, researchers, and law enforcement agencies to tailor interventions effectively.
 
 You can and should cross-reference sections and sub-sections.
 
@@ -46,10 +47,10 @@ year_data <-
   )
 
 year_data|>
-  ggplot(aes(x = age_cohort, y = n, color = as.factor(year))) +
+  ggplot(aes(x = year, y = n, color = as.factor(age_cohort))) +
   geom_point() +
   theme_minimal() +
-  labs(x = "age_cohort", y = "number", color = "year") +
+  labs(x = "year", y = "number", color = "age_cohort") +
   scale_color_brewer(palette = "Set1") +
   theme(legend.position = "bottom")
 
@@ -204,9 +205,7 @@ In @fig-ppcheckandposteriorvsprior-2 we compare the posterior with the prior. Th
 #| fig-subcap: ["Trace plot", "Rhat plot"]
 #| layout-ncol: 2
 
-plot(first_model, "trace")
 
-plot(first_model, "rhat")
 ```
 
 \newpage
