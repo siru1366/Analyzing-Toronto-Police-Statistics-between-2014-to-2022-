@@ -60,14 +60,24 @@ And also planes (@fig-planes). (You can change the height and width, but don't w
 #| warning: false
 #| message: false
 
-analysis_data <- read_csv(here::here("outputs/data/analysis_data.csv"))
+analysis_data <-
+  read_csv(file = here::here(
+    "outputs/data/clean_data.csv"),
+    show_col_types = FALSE
+  )
 
-analysis_data |> 
-  ggplot(aes(x = width, y = length)) +
-  geom_point(alpha = 0.8) +
-  theme_minimal() +
-  labs(x = "Wing width (mm)",
-       y = "Wing length (mm)")
+  analysis_data <-
+    analysis_data |>
+  filter(arrest_year == 2022)
+ 
+  analysis_data |> count(category)
+
+ analysis_data |> 
+  ggplot(aes(x = category)) +
+  geom_bar() +
+  theme_minimal() +# Make the theme neater
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))+
+  labs(x = "category", y = "Number of category") # Make labels more meaningful
 ```
 
 Talk way more about it. 

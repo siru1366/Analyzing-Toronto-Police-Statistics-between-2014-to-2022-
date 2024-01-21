@@ -45,4 +45,17 @@ write_csv(
   x = cleaned_data,
   file = "outputs/data/clean_data.csv"
 )
+analysis_data <-
+  read_csv(
+    "outputs/data/clean_data.csv",
+    show_col_types = FALSE
+  )
 
+  analysis_data <-
+    analysis_data |>
+  filter(arrest_year == 2022)
+
+head(analysis_data)
+ sex_analysis_data <-
+  analysis_data |>
+  count(sex)
