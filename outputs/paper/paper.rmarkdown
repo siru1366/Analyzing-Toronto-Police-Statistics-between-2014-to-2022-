@@ -22,6 +22,7 @@ library(tidyverse)
 library(palmerpenguins)
 ```
 
+
 # Introduction
 
 ## 
@@ -33,6 +34,7 @@ You can and should cross-reference sections and sub-sections.
 The remainder of this paper is structured as follows. @sec-data....
 
 # Data {#sec-data}
+
 
 ```{r}
 #| label: fig-bills
@@ -56,9 +58,11 @@ year_data|>
 
 ```
 
+
 Talk more about it.
 
 And also planes (@fig-planes). (You can change the height and width, but don't worry about doing that until you have finished every other aspect of the paper - Quarto will try to make it look nice and the defaults usually work well once you have enough text.)
+
 
 ```{r}
 #| label: fig-planes
@@ -83,6 +87,7 @@ analysis_data <-
   labs(x = "category", y = "Number of category") # Make labels more meaningful
 ```
 
+
 Talk way more about it.
 
 # Model
@@ -95,6 +100,7 @@ Here we briefly describe the Bayesian analysis model used to investigate... Back
 
 Define $y_i$ as the number of seconds that the plane remained aloft. Then $\beta_i$ is the wing width and $\gamma_i$ is the wing length, both measured in millimeters.
 
+
 ```{=tex}
 \begin{align} 
 y_i|\mu_i, \sigma &\sim \mbox{Normal}(\mu_i, \sigma) \\
@@ -105,6 +111,7 @@ y_i|\mu_i, \sigma &\sim \mbox{Normal}(\mu_i, \sigma) \\
 \sigma &\sim \mbox{Exponential}(1)
 \end{align}
 ```
+
 We run the model in R [@citeR] using the `rstanarm` package of @rstanarm. We use the default priors from `rstanarm`.
 
 ### Model justification
@@ -116,6 +123,7 @@ We can use maths by including latex between dollar signs, for instance $\theta$.
 # Results
 
 Our results are summarized in @tbl-modelresults.
+
 
 ```{r}
 #| echo: false
@@ -144,6 +152,7 @@ modelsummary::modelsummary(
   fmt = 2
 )
 ```
+
 
 # Discussion
 
@@ -175,6 +184,7 @@ In @fig-ppcheckandposteriorvsprior-1 we implement a posterior predictive check. 
 
 In @fig-ppcheckandposteriorvsprior-2 we compare the posterior with the prior. This shows...
 
+
 ```{r}
 #| eval: true
 #| echo: false
@@ -188,11 +198,13 @@ In @fig-ppcheckandposteriorvsprior-2 we compare the posterior with the prior. Th
 
 ```
 
+
 ## Diagnostics
 
 @fig-stanareyouokay-1 is a trace plot. It shows... This suggests...
 
 @fig-stanareyouokay-2 is a Rhat plot. It shows... This suggests...
+
 
 ```{r}
 #| echo: false
@@ -209,6 +221,8 @@ plot(first_model, "trace")
 plot(first_model, "rhat")
 ```
 
+
 \newpage
 
 # References
+

@@ -14,8 +14,23 @@ library(tidyverse)
 # [...UPDATE THIS...]
 
 #### Test data ####
-
-simulated_aggregate_data$sex |>
-  unique() == c("male", "female")
-simulated_aggregate_data$year |> min() == 2014
-simulated_aggregate_data$year |> max() == 2022
+  clean_data <-
+  read_csv(
+    file = here::here(
+      "outputs/data/clean_data.csv"),
+    show_col_types = FALSE
+  )
+  sex_check <- clean_data$sex |> unique()|>
+    length() == 3
+  
+  # Check the minimum year
+  min_year_check <- min(clean_data$arrest_year) == 2014
+  
+  # Check the maximum year
+  max_year_check <- max(clean_data$arrest_year) == 2022
+  
+  # Print the results
+  cat("Unique sex values check:", sex_check, "\n")
+  cat("Minimum year check:", min_year_check, "\n")
+  cat("Maximum year check:", max_year_check, "\n")
+ 

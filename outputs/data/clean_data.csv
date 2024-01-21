@@ -139,7 +139,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2017,Female,25 to 34,Crimes Against the Person,Stonegate-Queensway
 2019,Female,<18,Crimes Against the Person,Yorkdale-Glen Park
 2020,Male,18 to 24,Crimes Against Property,Morningside Heights
-2016,Unknown,18 to 24,Crimes Against the Person,York University Heights
 2018,Female,18 to 24,Crimes Against the Person,Morningside
 2022,Male,35 to 44,Crimes Against the Person,Downsview
 2016,Male,25 to 34,Criminal Code Traffic,Eglinton East
@@ -662,7 +661,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2015,Male,55 to 64,Criminal Code Traffic,Long Branch
 2018,Male,45 to 54,Crimes Against Property,Taylor-Massey
 2017,Male,45 to 54,Criminal Code Traffic,Wexford/Maryvale
-2017,Unknown,25 to 34,Other Criminal Code Violations,Pelmo Park-Humberlea
 2015,Male,65+,Other Criminal Code Violations,Eringate-Centennial-West Deane
 2014,Male,25 to 34,Criminal Code Traffic,Mount Olive-Silverstone-Jamestown
 2014,Male,25 to 34,Crimes Against the Person,Bay-Cloverhill
@@ -1445,7 +1443,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2015,Male,18 to 24,Crimes Against Property,Clanton Park
 2016,Male,18 to 24,Crimes Against Property,West Rouge
 2020,Female,25 to 34,Crimes Against the Person,Eringate-Centennial-West Deane
-2021,Unknown,25 to 34,Crimes Against Property,Oakdale-Beverley Heights
 2018,Female,45 to 54,Crimes Against the Person,Corso Italia-Davenport
 2021,Male,45 to 54,Crimes Against Property,Black Creek
 2020,Male,25 to 34,Controlled Drugs and Substances Act,Broadview North
@@ -1698,7 +1695,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2022,Female,45 to 54,Other Criminal Code Violations,Mount Olive-Silverstone-Jamestown
 2018,Male,45 to 54,Crimes Against the Person,Palmerston-Little Italy
 2019,Male,35 to 44,Other Criminal Code Violations,Harbourfront-CityPlace
-2019,Male,35 to 44,Other Federal Statute Violations,York University Heights
 2022,Female,35 to 44,Crimes Against Property,West Humber-Clairville
 2016,Male,35 to 44,Crimes Against the Person,Avondale
 2020,Male,<18,Crimes Against the Person,Dovercourt Village
@@ -1972,7 +1968,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2021,Female,25 to 34,Criminal Code Traffic,Corso Italia-Davenport
 2016,Female,25 to 34,Other Criminal Code Violations,Lansing-Westgate
 2019,Female,25 to 34,Crimes Against Property,Wellington Place
-2021,Unknown,45 to 54,Other Criminal Code Violations,Rosedale-Moore Park
 2022,Female,25 to 34,Crimes Against Property,Malvern West
 2017,Male,25 to 34,Crimes Against the Person,Yonge-Bay Corridor
 2018,Male,<18,Other Criminal Code Violations,East Willowdale
@@ -2098,7 +2093,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2020,Male,25 to 34,Crimes Against the Person,Ionview
 2017,Male,25 to 34,Crimes Against the Person,Long Branch
 2016,Female,45 to 54,Controlled Drugs and Substances Act,Little Portugal
-2021,Unknown,25 to 34,Other Criminal Code Violations,Oakdale-Beverley Heights
 2022,Female,45 to 54,Crimes Against Property,NSA
 2022,Male,45 to 54,Crimes Against Property,Dovercourt Village
 2017,Male,45 to 54,Crimes Against Property,New Toronto
@@ -2148,7 +2142,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2018,Male,55 to 64,Crimes Against the Person,Yonge-Bay Corridor
 2016,Male,55 to 64,Crimes Against Property,Yorkdale-Glen Park
 2015,Female,25 to 34,Crimes Against the Person,Yonge-Bay Corridor
-2020,Unknown,45 to 54,Crimes Against the Person,Rustic
 2022,Male,55 to 64,Other Criminal Code Violations,Bay-Cloverhill
 2016,Female,18 to 24,Crimes Against Property,Yorkdale-Glen Park
 2015,Male,<18,Controlled Drugs and Substances Act,Hillcrest Village
@@ -2248,7 +2241,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2016,Male,25 to 34,Crimes Against Property,Dovercourt Village
 2022,Female,45 to 54,Crimes Against the Person,NSA
 2016,Female,18 to 24,Criminal Code Traffic,Dorset Park
-2016,Unknown,25 to 34,Other Criminal Code Violations,Fort York-Liberty Village
 2016,Male,25 to 34,Crimes Against the Person,Trinity-Bellwoods
 2015,Male,35 to 44,Controlled Drugs and Substances Act,Newtonbrook East
 2018,Male,25 to 34,Controlled Drugs and Substances Act,Englemount-Lawrence
@@ -2571,7 +2563,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2020,Female,45 to 54,Controlled Drugs and Substances Act,Oakridge
 2017,Male,25 to 34,Crimes Against Property,Broadview North
 2015,Male,<18,Crimes Against Property,Junction-Wallace Emerson
-2021,Unknown,45 to 54,Other Criminal Code Violations,Malvern East
 2018,Male,<18,Crimes Against Property,Pelmo Park-Humberlea
 2016,Male,<18,Crimes Against the Person,Moss Park
 2022,Male,25 to 34,Controlled Drugs and Substances Act,Thorncliffe Park
@@ -3090,7 +3081,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2018,Male,18 to 24,Other Criminal Code Violations,Bayview Woods-Steeles
 2020,Male,25 to 34,Other Criminal Code Violations,Forest Hill North
 2021,Male,<18,Other Criminal Code Violations,Playter Estates-Danforth
-2022,Unknown,45 to 54,Crimes Against the Person,Pelmo Park-Humberlea
 2015,Female,35 to 44,Other Criminal Code Violations,Woburn North
 2020,Male,35 to 44,Other Criminal Code Violations,The Beaches
 2022,Male,18 to 24,Crimes Against Property,Stonegate-Queensway
@@ -3165,7 +3155,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2014,Female,<18,Crimes Against Property,West Queen West
 2015,Male,55 to 64,Crimes Against Property,University
 2020,Male,25 to 34,Criminal Code Traffic,Morningside
-2022,Male,25 to 34,Other Federal Statute Violations,Woodbine Corridor
 2016,Female,25 to 34,Other Criminal Code Violations,L'Amoreaux West
 2017,Female,25 to 34,Crimes Against Property,High Park North
 2020,Female,<18,Controlled Drugs and Substances Act,Weston-Pelham Park
@@ -3767,7 +3756,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2021,Male,25 to 34,Crimes Against the Person,Fenside-Parkwoods
 2015,Male,18 to 24,Controlled Drugs and Substances Act,St.Andrew-Windfields
 2020,Female,25 to 34,Crimes Against Property,North Toronto
-2015,Unknown,18 to 24,Other Criminal Code Violations,Junction Area
 2019,Female,45 to 54,Crimes Against Property,Avondale
 2016,Male,18 to 24,Crimes Against Property,Rustic
 2014,Male,18 to 24,Crimes Against Property,Parkwoods-O'Connor Hills
@@ -4053,7 +4041,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2018,Female,35 to 44,Crimes Against Property,Humber Bay Shores
 2017,Male,35 to 44,Other Criminal Code Violations,Yonge-Bay Corridor
 2022,Male,<18,Crimes Against the Person,Don Valley Village
-2017,Unknown,25 to 34,Criminal Code Traffic,Forest Hill South
 2022,Female,25 to 34,Crimes Against Property,South Parkdale
 2018,Male,25 to 34,Crimes Against the Person,Junction Area
 2020,Male,35 to 44,Controlled Drugs and Substances Act,Woodbine Corridor
@@ -4256,7 +4243,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2021,Male,35 to 44,Other Criminal Code Violations,Oakdale-Beverley Heights
 2022,Male,35 to 44,Controlled Drugs and Substances Act,Trinity-Bellwoods
 2017,Female,18 to 24,Crimes Against the Person,Yonge-Bay Corridor
-2014,Unknown,25 to 34,Crimes Against Property,Weston
 2017,Female,25 to 34,Crimes Against the Person,West Humber-Clairville
 2018,Male,25 to 34,Crimes Against Property,Victoria Village
 2014,Female,18 to 24,Other Criminal Code Violations,Cliffcrest
@@ -4629,7 +4615,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2017,Male,<18,Criminal Code Traffic,North Riverdale
 2022,Male,35 to 44,Other Criminal Code Violations,Morningside
 2021,Female,25 to 34,Other Criminal Code Violations,Kensington-Chinatown
-2016,Female,25 to 34,Other Federal Statute Violations,Kingsview Village-The Westway
 2018,Male,35 to 44,Other Criminal Code Violations,Caledonia-Fairbank
 2014,Male,<18,Crimes Against Property,Yorkdale-Glen Park
 2020,Male,18 to 24,Crimes Against Property,St.Andrew-Windfields
@@ -4787,7 +4772,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2017,Male,25 to 34,Other Criminal Code Violations,New Toronto
 2022,Male,65+,Crimes Against the Person,The Beaches
 2016,Male,25 to 34,Crimes Against the Person,Annex
-2016,Unknown,35 to 44,Crimes Against Property,The Beaches
 2022,Male,25 to 34,Crimes Against the Person,Elms-Old Rexdale
 2016,Male,55 to 64,Crimes Against Property,Agincourt North
 2017,Female,18 to 24,Crimes Against the Person,Taylor-Massey
@@ -5181,7 +5165,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2018,Male,25 to 34,Other Criminal Code Violations,Cabbagetown-South St.James Town
 2014,Male,25 to 34,Other Criminal Code Violations,Bayview Village
 2014,Male,25 to 34,Crimes Against the Person,Brookhaven-Amesbury
-2018,Unknown,18 to 24,Crimes Against Property,Black Creek
 2016,Female,55 to 64,Crimes Against the Person,Rockcliffe-Smythe
 2018,Male,25 to 34,Crimes Against Property,Newtonbrook East
 2019,Male,65+,Other Criminal Code Violations,Islington
@@ -5555,7 +5538,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2021,Male,18 to 24,Crimes Against Property,Bay-Cloverhill
 2020,Male,18 to 24,Crimes Against the Person,University
 2018,Male,25 to 34,Crimes Against the Person,Bayview Woods-Steeles
-2020,Unknown,55 to 64,Crimes Against the Person,Wellington Place
 2017,Male,55 to 64,Crimes Against Property,Thorncliffe Park
 2014,Female,18 to 24,Crimes Against Property,Woburn North
 2016,Female,25 to 34,Crimes Against Property,Newtonbrook East
@@ -5651,7 +5633,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2017,Male,45 to 54,Crimes Against Property,Yorkdale-Glen Park
 2016,Female,18 to 24,Other Criminal Code Violations,Birchcliffe-Cliffside
 2015,Female,35 to 44,Criminal Code Traffic,North Toronto
-2016,Unknown,25 to 34,Crimes Against the Person,Yorkdale-Glen Park
 2017,Male,25 to 34,Crimes Against the Person,Thorncliffe Park
 2018,Female,<18,Crimes Against the Person,Steeles
 2015,Male,<18,Other Criminal Code Violations,Brookhaven-Amesbury
@@ -6301,7 +6282,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2021,Male,35 to 44,Crimes Against the Person,Church-Wellesley
 2022,Female,18 to 24,Crimes Against the Person,Junction-Wallace Emerson
 2014,Female,45 to 54,Crimes Against Property,Lansing-Westgate
-2021,Unknown,25 to 34,Crimes Against the Person,Church-Wellesley
 2021,Male,35 to 44,Crimes Against Property,Yonge-Eglinton
 2018,Male,35 to 44,Crimes Against the Person,Annex
 2018,Male,55 to 64,Crimes Against Property,Kensington-Chinatown
@@ -6590,7 +6570,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2016,Female,<18,Other Criminal Code Violations,Wellington Place
 2016,Male,45 to 54,Crimes Against Property,Roncesvalles
 2016,Female,18 to 24,Crimes Against the Person,Milliken
-2017,Unknown,25 to 34,Other Criminal Code Violations,NSA
 2017,Female,18 to 24,Criminal Code Traffic,Morningside Heights
 2022,Male,18 to 24,Crimes Against Property,Black Creek
 2022,Male,35 to 44,Criminal Code Traffic,Roncesvalles
@@ -6757,7 +6736,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2016,Female,35 to 44,Other Criminal Code Violations,Mount Dennis
 2017,Male,<18,Crimes Against Property,O'Connor-Parkview
 2016,Male,18 to 24,Controlled Drugs and Substances Act,Centennial Scarborough
-2020,Unknown,25 to 34,Crimes Against the Person,Little Portugal
 2021,Female,18 to 24,Crimes Against Property,Morningside
 2015,Male,45 to 54,Controlled Drugs and Substances Act,Malvern West
 2022,Male,55 to 64,Crimes Against Property,Oakwood Village
@@ -6845,7 +6823,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2016,Male,35 to 44,Other Criminal Code Violations,South Riverdale
 2022,Male,35 to 44,Crimes Against Property,Rosedale-Moore Park
 2022,Male,18 to 24,Other Criminal Code Violations,Kennedy Park
-2022,Unknown,<18,Crimes Against the Person,Palmerston-Little Italy
 2022,Male,45 to 54,Crimes Against Property,Wexford/Maryvale
 2017,Female,25 to 34,Crimes Against the Person,Scarborough Village
 2017,Male,35 to 44,Crimes Against the Person,Woodbine Corridor
@@ -7213,7 +7190,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2018,Male,45 to 54,Crimes Against the Person,Elms-Old Rexdale
 2019,Male,<18,Other Criminal Code Violations,NSA
 2020,Male,35 to 44,Crimes Against Property,Eglinton East
-2015,Unknown,25 to 34,Crimes Against Property,Yorkdale-Glen Park
 2022,Male,45 to 54,Crimes Against Property,Black Creek
 2019,Female,25 to 34,Controlled Drugs and Substances Act,Dorset Park
 2019,Female,35 to 44,Crimes Against Property,Rexdale-Kipling
@@ -7396,7 +7372,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2014,Male,18 to 24,Crimes Against Property,Dorset Park
 2019,Male,18 to 24,Controlled Drugs and Substances Act,Kensington-Chinatown
 2015,Male,55 to 64,Crimes Against the Person,Woodbine Corridor
-2022,Unknown,45 to 54,Crimes Against the Person,Mount Olive-Silverstone-Jamestown
 2022,Male,25 to 34,Other Criminal Code Violations,Golfdale-Cedarbrae-Woburn
 2018,Male,18 to 24,Crimes Against the Person,NSA
 2017,Male,<18,Other Criminal Code Violations,Taylor-Massey
@@ -9861,7 +9836,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2014,Male,55 to 64,Crimes Against the Person,Woburn North
 2014,Male,35 to 44,Criminal Code Traffic,Humbermede
 2019,Male,18 to 24,Crimes Against Property,Englemount-Lawrence
-2022,Unknown,18 to 24,Crimes Against the Person,Junction Area
 2016,Male,25 to 34,Other Criminal Code Violations,Dorset Park
 2015,Male,35 to 44,Criminal Code Traffic,Banbury-Don Mills
 2020,Female,18 to 24,Crimes Against the Person,Broadview North
@@ -10152,7 +10126,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2019,Male,18 to 24,Crimes Against Property,Stonegate-Queensway
 2015,Female,18 to 24,Other Criminal Code Violations,High Park-Swansea
 2014,Female,45 to 54,Crimes Against Property,Banbury-Don Mills
-2014,Unknown,25 to 34,Other Criminal Code Violations,Weston
 2017,Male,55 to 64,Other Criminal Code Violations,Milliken
 2021,Female,<18,Crimes Against Property,Bayview Woods-Steeles
 2018,Male,18 to 24,Other Criminal Code Violations,St.Andrew-Windfields
@@ -10186,7 +10159,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2018,Male,18 to 24,Other Criminal Code Violations,Golfdale-Cedarbrae-Woburn
 2017,Male,25 to 34,Controlled Drugs and Substances Act,Rockcliffe-Smythe
 2018,Female,25 to 34,Crimes Against Property,Henry Farm
-2017,Unknown,45 to 54,Other Criminal Code Violations,Yonge-Bay Corridor
 2017,Male,<18,Crimes Against Property,Junction-Wallace Emerson
 2017,Male,35 to 44,Other Criminal Code Violations,Centennial Scarborough
 2019,Male,<18,Crimes Against Property,Thorncliffe Park
@@ -10364,7 +10336,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2022,Male,18 to 24,Crimes Against Property,West Rouge
 2019,Female,25 to 34,Crimes Against the Person,Kennedy Park
 2019,Male,18 to 24,Other Criminal Code Violations,Little Portugal
-2017,Unknown,25 to 34,Controlled Drugs and Substances Act,Rockcliffe-Smythe
 2018,Female,35 to 44,Crimes Against Property,Etobicoke City Centre
 2019,Male,55 to 64,Crimes Against Property,Golfdale-Cedarbrae-Woburn
 2022,Female,25 to 34,Other Criminal Code Violations,Wychwood
@@ -10571,7 +10542,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2014,Male,35 to 44,Crimes Against the Person,Weston-Pelham Park
 2016,Female,65+,Crimes Against Property,Trinity-Bellwoods
 2018,Female,65+,Crimes Against Property,Junction Area
-2016,Unknown,25 to 34,Crimes Against Property,High Park North
 2022,Male,35 to 44,Crimes Against Property,Malvern West
 2016,Male,18 to 24,Crimes Against the Person,Englemount-Lawrence
 2018,Male,<18,Crimes Against Property,Woburn North
@@ -10991,7 +10961,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2019,Female,25 to 34,Crimes Against Property,Harbourfront-CityPlace
 2014,Male,45 to 54,Crimes Against Property,South Eglinton-Davisville
 2016,Male,35 to 44,Crimes Against Property,South Parkdale
-2015,Unknown,18 to 24,Crimes Against Property,Yonge-Bay Corridor
 2022,Male,18 to 24,Crimes Against the Person,Clairlea-Birchmount
 2018,Male,18 to 24,Criminal Code Traffic,Clanton Park
 2020,Male,18 to 24,Crimes Against the Person,Willowridge-Martingrove-Richview
@@ -11130,9 +11099,7 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2021,Male,18 to 24,Crimes Against Property,Elms-Old Rexdale
 2015,Male,35 to 44,Other Criminal Code Violations,The Beaches
 2022,Female,45 to 54,Crimes Against Property,Lansing-Westgate
-2021,Unknown,18 to 24,Other Criminal Code Violations,Englemount-Lawrence
 2017,Male,18 to 24,Crimes Against Property,Junction Area
-2016,Unknown,35 to 44,Crimes Against Property,Yonge-Bay Corridor
 2022,Male,25 to 34,Crimes Against the Person,Beechborough-Greenbrook
 2018,Female,35 to 44,Crimes Against Property,Humber Bay Shores
 2022,Male,35 to 44,Crimes Against Property,Yonge-Eglinton
@@ -11564,7 +11531,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2017,Male,18 to 24,Crimes Against the Person,Willowridge-Martingrove-Richview
 2014,Male,65+,Criminal Code Traffic,Junction-Wallace Emerson
 2015,Male,65+,Crimes Against Property,Humber Summit
-2014,Unknown,25 to 34,Crimes Against Property,Yonge-Bay Corridor
 2017,Male,25 to 34,Crimes Against Property,Kingsway South
 2021,Male,55 to 64,Crimes Against Property,Willowdale West
 2022,Male,35 to 44,Crimes Against Property,St Lawrence-East Bayfront-The Islands
@@ -11862,7 +11828,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2020,Female,35 to 44,Other Criminal Code Violations,Bendale-Glen Andrew
 2017,Male,25 to 34,Crimes Against Property,Yorkdale-Glen Park
 2019,Male,45 to 54,Crimes Against the Person,Newtonbrook West
-2014,Unknown,18 to 24,Crimes Against Property,Willowdale West
 2022,Male,18 to 24,Crimes Against the Person,Oakridge
 2018,Male,25 to 34,Crimes Against the Person,Danforth
 2022,Female,35 to 44,Other Criminal Code Violations,Birchcliffe-Cliffside
@@ -12207,7 +12172,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2015,Male,35 to 44,Other Criminal Code Violations,Don Valley Village
 2018,Male,45 to 54,Criminal Code Traffic,Etobicoke City Centre
 2019,Male,35 to 44,Other Criminal Code Violations,Ionview
-2020,Unknown,18 to 24,Crimes Against Property,Downtown Yonge East
 2016,Male,45 to 54,Crimes Against Property,NSA
 2020,Male,55 to 64,Crimes Against the Person,Weston
 2019,Female,25 to 34,Controlled Drugs and Substances Act,Scarborough Village
@@ -12370,7 +12334,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2018,Male,<18,Crimes Against Property,Little Portugal
 2021,Female,18 to 24,Crimes Against Property,Etobicoke City Centre
 2017,Male,35 to 44,Criminal Code Traffic,Church-Wellesley
-2021,Unknown,18 to 24,Crimes Against the Person,NSA
 2016,Male,25 to 34,Other Criminal Code Violations,Bay-Cloverhill
 2022,Male,55 to 64,Crimes Against Property,Rockcliffe-Smythe
 2019,Female,45 to 54,Crimes Against Property,Bayview Village
@@ -13113,7 +13076,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2015,Male,18 to 24,Criminal Code Traffic,Kensington-Chinatown
 2017,Female,45 to 54,Crimes Against the Person,Victoria Village
 2015,Female,45 to 54,Crimes Against Property,NSA
-2014,Unknown,25 to 34,Crimes Against Property,Yorkdale-Glen Park
 2021,Male,65+,Crimes Against the Person,Eglinton East
 2018,Male,18 to 24,Other Criminal Code Violations,Fort York-Liberty Village
 2018,Male,18 to 24,Other Criminal Code Violations,Bathurst Manor
@@ -14491,7 +14453,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2022,Male,<18,Other Criminal Code Violations,Agincourt North
 2018,Male,25 to 34,Crimes Against Property,York University Heights
 2016,Male,55 to 64,Crimes Against Property,Moss Park
-2022,Unknown,35 to 44,Crimes Against Property,South Riverdale
 2022,Female,18 to 24,Other Criminal Code Violations,Bendale-Glen Andrew
 2017,Male,45 to 54,Criminal Code Traffic,West Rouge
 2022,Male,25 to 34,Criminal Code Traffic,High Park-Swansea
@@ -14670,7 +14631,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2018,Male,18 to 24,Other Criminal Code Violations,Clanton Park
 2022,Female,25 to 34,Other Criminal Code Violations,Malvern West
 2015,Male,45 to 54,Other Criminal Code Violations,Kingsway South
-2015,Unknown,18 to 24,Crimes Against the Person,Junction Area
 2021,Male,45 to 54,Other Criminal Code Violations,Thistletown-Beaumond Heights
 2020,Male,45 to 54,Crimes Against Property,Willowridge-Martingrove-Richview
 2018,Male,35 to 44,Other Criminal Code Violations,North St.James Town
@@ -15157,7 +15117,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2015,Male,25 to 34,Crimes Against the Person,North St.James Town
 2015,Male,25 to 34,Criminal Code Traffic,Mount Dennis
 2014,Male,35 to 44,Other Criminal Code Violations,Bay-Cloverhill
-2014,Unknown,25 to 34,Controlled Drugs and Substances Act,Yorkdale-Glen Park
 2016,Female,35 to 44,Crimes Against Property,Briar Hill-Belgravia
 2015,Male,25 to 34,Crimes Against the Person,Bathurst Manor
 2020,Female,25 to 34,Other Criminal Code Violations,South Riverdale
@@ -15774,7 +15733,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2021,Male,45 to 54,Other Criminal Code Violations,Keelesdale-Eglinton West
 2021,Female,35 to 44,Crimes Against the Person,Forest Hill North
 2018,Male,25 to 34,Crimes Against the Person,Old East York
-2020,Unknown,18 to 24,Other Criminal Code Violations,Bay-Cloverhill
 2021,Male,35 to 44,Crimes Against Property,Maple Leaf
 2021,Male,55 to 64,Other Criminal Code Violations,Moss Park
 2016,Male,25 to 34,Crimes Against Property,Thorncliffe Park
@@ -16847,7 +16805,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2014,Male,55 to 64,Crimes Against Property,Agincourt South-Malvern West
 2018,Male,25 to 34,Other Criminal Code Violations,Eglinton East
 2014,Male,<18,Other Criminal Code Violations,Yonge-St.Clair
-2022,Unknown,35 to 44,Other Criminal Code Violations,Blake-Jones
 2021,Female,35 to 44,Crimes Against the Person,Elms-Old Rexdale
 2017,Male,35 to 44,Crimes Against Property,Glenfield-Jane Heights
 2021,Male,35 to 44,Crimes Against the Person,Lawrence Park South
@@ -16907,7 +16864,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2016,Male,18 to 24,Crimes Against Property,Milliken
 2021,Female,45 to 54,Crimes Against the Person,Dorset Park
 2019,Female,18 to 24,Controlled Drugs and Substances Act,Morningside
-2017,Unknown,45 to 54,Crimes Against the Person,Kensington-Chinatown
 2018,Male,45 to 54,Crimes Against Property,Yorkdale-Glen Park
 2018,Male,18 to 24,Other Criminal Code Violations,Brookhaven-Amesbury
 2018,Male,55 to 64,Crimes Against Property,Englemount-Lawrence
@@ -17056,7 +17012,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2015,Male,18 to 24,Crimes Against the Person,Annex
 2021,Male,18 to 24,Crimes Against Property,Fort York-Liberty Village
 2015,Female,25 to 34,Crimes Against Property,North Riverdale
-2014,Unknown,18 to 24,Other Criminal Code Violations,Bay-Cloverhill
 2016,Female,45 to 54,Criminal Code Traffic,Trinity-Bellwoods
 2022,Male,25 to 34,Other Criminal Code Violations,Bay-Cloverhill
 2019,Male,65+,Crimes Against the Person,East End-Danforth
@@ -17121,7 +17076,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2020,Female,35 to 44,Other Criminal Code Violations,Kennedy Park
 2020,Male,25 to 34,Other Criminal Code Violations,Yorkdale-Glen Park
 2014,Male,65+,Crimes Against the Person,Agincourt South-Malvern West
-2017,Unknown,<18,Crimes Against the Person,Malvern East
 2014,Female,45 to 54,Crimes Against Property,Etobicoke City Centre
 2021,Male,18 to 24,Other Criminal Code Violations,Rexdale-Kipling
 2019,Male,18 to 24,Crimes Against Property,Oakdale-Beverley Heights
@@ -17232,7 +17186,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2019,Male,45 to 54,Crimes Against the Person,Little Portugal
 2014,Male,55 to 64,Other Criminal Code Violations,Oakdale-Beverley Heights
 2017,Female,55 to 64,Crimes Against Property,Kennedy Park
-2015,Unknown,<18,Other Criminal Code Violations,Kingsway South
 2018,Male,25 to 34,Crimes Against the Person,Yorkdale-Glen Park
 2018,Male,45 to 54,Crimes Against the Person,Tam O'Shanter-Sullivan
 2014,Male,25 to 34,Other Criminal Code Violations,Annex
@@ -17480,7 +17433,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2017,Male,35 to 44,Crimes Against the Person,Milliken
 2017,Female,<18,Crimes Against the Person,Weston
 2021,Male,35 to 44,Other Criminal Code Violations,Corso Italia-Davenport
-2017,Unknown,18 to 24,Criminal Code Traffic,Elms-Old Rexdale
 2015,Female,65+,Crimes Against Property,Taylor-Massey
 2020,Male,35 to 44,Controlled Drugs and Substances Act,Black Creek
 2018,Female,25 to 34,Crimes Against the Person,West Rouge
@@ -17730,7 +17682,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2021,Male,65+,Controlled Drugs and Substances Act,NSA
 2019,Female,25 to 34,Criminal Code Traffic,Stonegate-Queensway
 2016,Male,25 to 34,Criminal Code Traffic,Etobicoke City Centre
-2020,Unknown,55 to 64,Crimes Against the Person,Wellington Place
 2019,Male,35 to 44,Crimes Against Property,Birchcliffe-Cliffside
 2020,Male,45 to 54,Controlled Drugs and Substances Act,Wellington Place
 2018,Male,35 to 44,Crimes Against the Person,West Hill
@@ -18239,7 +18190,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2019,Male,<18,Other Criminal Code Violations,Weston
 2019,Male,25 to 34,Other Criminal Code Violations,Long Branch
 2019,Female,25 to 34,Crimes Against the Person,Bridle Path-Sunnybrook-York Mills
-2020,Unknown,25 to 34,Crimes Against the Person,Victoria Village
 2016,Male,18 to 24,Crimes Against Property,Humber Bay Shores
 2019,Male,55 to 64,Crimes Against the Person,West Hill
 2014,Male,25 to 34,Crimes Against Property,Danforth
@@ -18536,7 +18486,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2017,Male,45 to 54,Criminal Code Traffic,Steeles
 2022,Male,45 to 54,Crimes Against Property,Junction-Wallace Emerson
 2017,Male,45 to 54,Crimes Against the Person,South Riverdale
-2014,Unknown,18 to 24,Crimes Against Property,Bay-Cloverhill
 2019,Male,55 to 64,Other Criminal Code Violations,Mount Olive-Silverstone-Jamestown
 2016,Male,<18,Other Criminal Code Violations,Taylor-Massey
 2018,Male,18 to 24,Crimes Against Property,Humewood-Cedarvale
@@ -18570,7 +18519,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2015,Male,45 to 54,Crimes Against the Person,Pleasant View
 2015,Female,35 to 44,Crimes Against Property,Thorncliffe Park
 2022,Male,35 to 44,Crimes Against Property,University
-2017,Unknown,25 to 34,Crimes Against Property,Junction Area
 2017,Male,25 to 34,Crimes Against the Person,Weston
 2018,Male,55 to 64,Crimes Against the Person,Cliffcrest
 2018,Male,25 to 34,Crimes Against Property,University
@@ -20488,7 +20436,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2016,Male,<18,Crimes Against the Person,Junction-Wallace Emerson
 2020,Male,18 to 24,Crimes Against the Person,Yorkdale-Glen Park
 2017,Female,35 to 44,Other Criminal Code Violations,West Queen West
-2015,Unknown,25 to 34,Crimes Against Property,Yorkdale-Glen Park
 2018,Male,35 to 44,Crimes Against the Person,Henry Farm
 2016,Male,18 to 24,Controlled Drugs and Substances Act,Briar Hill-Belgravia
 2016,Male,55 to 64,Crimes Against Property,Yorkdale-Glen Park
@@ -20852,7 +20799,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2016,Female,<18,Crimes Against Property,Bendale-Glen Andrew
 2014,Male,<18,Criminal Code Traffic,Highland Creek
 2020,Male,35 to 44,Crimes Against the Person,Etobicoke City Centre
-2017,Male,35 to 44,Other Federal Statute Violations,Yorkdale-Glen Park
 2014,Female,18 to 24,Crimes Against Property,St.Andrew-Windfields
 2022,Male,18 to 24,Crimes Against the Person,Corso Italia-Davenport
 2020,Female,55 to 64,Other Criminal Code Violations,Danforth East York
@@ -21403,7 +21349,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2021,Male,35 to 44,Crimes Against the Person,NSA
 2016,Female,<18,Crimes Against Property,L'Amoreaux West
 2014,Male,45 to 54,Criminal Code Traffic,Hillcrest Village
-2020,Unknown,55 to 64,Crimes Against Property,Oakwood Village
 2014,Male,18 to 24,Crimes Against Property,Glenfield-Jane Heights
 2019,Male,25 to 34,Other Criminal Code Violations,Mimico-Queensway
 2019,Female,25 to 34,Crimes Against Property,Bendale-Glen Andrew
@@ -21778,7 +21723,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2015,Male,55 to 64,Crimes Against the Person,Cliffcrest
 2021,Male,45 to 54,Crimes Against Property,Morningside Heights
 2018,Male,35 to 44,Other Criminal Code Violations,University
-2015,Unknown,35 to 44,Other Criminal Code Violations,Kensington-Chinatown
 2022,Male,45 to 54,Crimes Against the Person,Lambton Baby Point
 2016,Male,35 to 44,Controlled Drugs and Substances Act,Humber Summit
 2014,Male,45 to 54,Crimes Against Property,St Lawrence-East Bayfront-The Islands
@@ -22157,7 +22101,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2015,Female,25 to 34,Crimes Against the Person,Junction Area
 2015,Female,35 to 44,Crimes Against the Person,Keelesdale-Eglinton West
 2018,Male,45 to 54,Crimes Against Property,O'Connor-Parkview
-2019,Unknown,45 to 54,Other Criminal Code Violations,Kensington-Chinatown
 2015,Male,35 to 44,Crimes Against Property,Golfdale-Cedarbrae-Woburn
 2022,Male,45 to 54,Crimes Against the Person,Yorkdale-Glen Park
 2018,Male,35 to 44,Crimes Against the Person,Tam O'Shanter-Sullivan
@@ -22171,7 +22114,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2017,Female,55 to 64,Crimes Against Property,Yonge-Bay Corridor
 2017,Male,35 to 44,Crimes Against Property,Lawrence Park North
 2016,Male,<18,Criminal Code Traffic,Markland Wood
-2022,Unknown,25 to 34,Crimes Against the Person,York University Heights
 2022,Female,25 to 34,Crimes Against Property,West Hill
 2018,Male,45 to 54,Crimes Against Property,Brookhaven-Amesbury
 2019,Female,35 to 44,Crimes Against Property,Etobicoke City Centre
@@ -22805,7 +22747,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2016,Female,<18,Crimes Against the Person,Dovercourt Village
 2016,Male,55 to 64,Crimes Against Property,Church-Wellesley
 2022,Male,18 to 24,Crimes Against the Person,Yonge-Eglinton
-2016,Unknown,25 to 34,Crimes Against the Person,High Park North
 2016,Female,35 to 44,Crimes Against the Person,Junction-Wallace Emerson
 2022,Male,25 to 34,Criminal Code Traffic,Glenfield-Jane Heights
 2014,Male,35 to 44,Other Criminal Code Violations,Willowdale West
@@ -23257,7 +23198,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2020,Male,55 to 64,Crimes Against the Person,Yorkdale-Glen Park
 2020,Male,25 to 34,Crimes Against the Person,Broadview North
 2016,Male,18 to 24,Crimes Against Property,Taylor-Massey
-2015,Unknown,<18,Crimes Against Property,Kingsway South
 2020,Male,45 to 54,Other Criminal Code Violations,Stonegate-Queensway
 2019,Male,25 to 34,Other Criminal Code Violations,North Riverdale
 2022,Male,<18,Controlled Drugs and Substances Act,Birchcliffe-Cliffside
@@ -23699,7 +23639,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2022,Male,25 to 34,Crimes Against the Person,North St.James Town
 2014,Male,35 to 44,Criminal Code Traffic,West Rouge
 2022,Female,35 to 44,Crimes Against the Person,Dorset Park
-2014,Male,45 to 54,Other Federal Statute Violations,Moss Park
 2014,Male,45 to 54,Crimes Against the Person,Bayview Woods-Steeles
 2015,Male,25 to 34,Crimes Against the Person,Newtonbrook West
 2022,Male,45 to 54,Other Criminal Code Violations,Yonge-Bay Corridor
@@ -23902,7 +23841,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2017,Female,45 to 54,Crimes Against the Person,High Park North
 2017,Male,35 to 44,Criminal Code Traffic,Kennedy Park
 2019,Male,25 to 34,Criminal Code Traffic,Greenwood-Coxwell
-2015,Male,35 to 44,Other Federal Statute Violations,York University Heights
 2014,Male,18 to 24,Crimes Against the Person,South Eglinton-Davisville
 2022,Female,35 to 44,Crimes Against the Person,Westminster-Branson
 2021,Male,25 to 34,Crimes Against Property,Trinity-Bellwoods
@@ -23924,7 +23862,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2015,Male,35 to 44,Controlled Drugs and Substances Act,St Lawrence-East Bayfront-The Islands
 2020,Male,25 to 34,Other Criminal Code Violations,Wellington Place
 2014,Female,55 to 64,Crimes Against Property,Yonge-Eglinton
-2015,Unknown,45 to 54,Crimes Against the Person,Mimico-Queensway
 2020,Male,25 to 34,Other Criminal Code Violations,Centennial Scarborough
 2014,Male,35 to 44,Controlled Drugs and Substances Act,Etobicoke City Centre
 2020,Male,55 to 64,Crimes Against Property,Moss Park
@@ -24217,7 +24154,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2022,Male,45 to 54,Other Criminal Code Violations,Clanton Park
 2015,Male,18 to 24,Crimes Against Property,Cabbagetown-South St.James Town
 2014,Male,<18,Controlled Drugs and Substances Act,Rockcliffe-Smythe
-2021,Male,18 to 24,Other Federal Statute Violations,Golfdale-Cedarbrae-Woburn
 2020,Male,<18,Crimes Against Property,Dufferin Grove
 2019,Male,25 to 34,Controlled Drugs and Substances Act,Black Creek
 2018,Male,25 to 34,Criminal Code Traffic,Caledonia-Fairbank
@@ -25143,7 +25079,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2021,Male,65+,Crimes Against Property,South Parkdale
 2015,Female,65+,Crimes Against Property,Etobicoke City Centre
 2022,Male,35 to 44,Crimes Against Property,West Humber-Clairville
-2016,Unknown,45 to 54,Crimes Against Property,Bendale-Glen Andrew
 2022,Female,45 to 54,Crimes Against Property,Agincourt South-Malvern West
 2022,Male,25 to 34,Crimes Against Property,Harbourfront-CityPlace
 2019,Male,35 to 44,Crimes Against Property,Greenwood-Coxwell
@@ -25837,7 +25772,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2016,Male,55 to 64,Crimes Against the Person,University
 2014,Male,45 to 54,Controlled Drugs and Substances Act,Brookhaven-Amesbury
 2016,Male,18 to 24,Crimes Against the Person,Bay-Cloverhill
-2018,Unknown,25 to 34,Crimes Against Property,Willowridge-Martingrove-Richview
 2019,Male,<18,Crimes Against the Person,O'Connor-Parkview
 2018,Female,65+,Crimes Against Property,Don Valley Village
 2020,Female,45 to 54,Other Criminal Code Violations,Woburn North
@@ -26362,7 +26296,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2017,Male,45 to 54,Crimes Against the Person,Woodbine Corridor
 2022,Male,18 to 24,Crimes Against Property,Malvern West
 2020,Female,18 to 24,Crimes Against Property,Bayview Village
-2022,Unknown,18 to 24,Crimes Against the Person,Palmerston-Little Italy
 2018,Male,25 to 34,Controlled Drugs and Substances Act,Woburn North
 2018,Male,<18,Crimes Against the Person,Steeles
 2016,Male,25 to 34,Other Criminal Code Violations,Wellington Place
@@ -27128,7 +27061,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2015,Male,45 to 54,Other Criminal Code Violations,Pleasant View
 2015,Male,<18,Other Criminal Code Violations,Danforth East York
 2016,Female,<18,Other Criminal Code Violations,Annex
-2022,Unknown,<18,Crimes Against the Person,Danforth
 2018,Female,35 to 44,Crimes Against Property,Newtonbrook West
 2018,Male,45 to 54,Crimes Against Property,Flemingdon Park
 2017,Male,65+,Crimes Against the Person,Eringate-Centennial-West Deane
@@ -27341,7 +27273,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2015,Female,55 to 64,Crimes Against Property,Victoria Village
 2016,Male,45 to 54,Crimes Against Property,Bedford Park-Nortown
 2017,Male,45 to 54,Other Criminal Code Violations,Downsview
-2015,Unknown,35 to 44,Controlled Drugs and Substances Act,Kensington-Chinatown
 2014,Female,65+,Crimes Against Property,Steeles
 2022,Male,18 to 24,Crimes Against Property,St.Andrew-Windfields
 2014,Female,35 to 44,Crimes Against Property,The Beaches
@@ -27387,7 +27318,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2022,Male,55 to 64,Crimes Against the Person,Newtonbrook East
 2021,Female,18 to 24,Crimes Against Property,NSA
 2014,Male,35 to 44,Other Criminal Code Violations,Victoria Village
-2018,Unknown,55 to 64,Crimes Against the Person,Glenfield-Jane Heights
 2015,Male,45 to 54,Other Criminal Code Violations,Kensington-Chinatown
 2017,Male,35 to 44,Crimes Against Property,Bathurst Manor
 2019,Female,35 to 44,Other Criminal Code Violations,Kingsway South
@@ -27866,7 +27796,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2020,Male,25 to 34,Criminal Code Traffic,Yonge-Bay Corridor
 2014,Female,35 to 44,Crimes Against Property,West Hill
 2022,Female,55 to 64,Crimes Against the Person,Westminster-Branson
-2021,Unknown,35 to 44,Crimes Against the Person,Bay-Cloverhill
 2019,Male,25 to 34,Other Criminal Code Violations,North Toronto
 2020,Male,35 to 44,Crimes Against Property,Eringate-Centennial-West Deane
 2019,Female,35 to 44,Crimes Against Property,Agincourt South-Malvern West
@@ -27978,7 +27907,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2018,Female,35 to 44,Crimes Against Property,West Hill
 2022,Male,<18,Crimes Against Property,Trinity-Bellwoods
 2018,Male,25 to 34,Crimes Against Property,Keelesdale-Eglinton West
-2015,Unknown,<18,Crimes Against Property,Clairlea-Birchmount
 2014,Male,<18,Other Criminal Code Violations,Kennedy Park
 2022,Male,35 to 44,Crimes Against the Person,Westminster-Branson
 2019,Male,35 to 44,Other Criminal Code Violations,South Parkdale
@@ -28071,7 +27999,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2015,Male,55 to 64,Crimes Against the Person,Junction-Wallace Emerson
 2015,Female,45 to 54,Crimes Against Property,Danforth East York
 2018,Female,18 to 24,Other Criminal Code Violations,Mount Olive-Silverstone-Jamestown
-2017,Unknown,35 to 44,Other Criminal Code Violations,Stonegate-Queensway
 2017,Female,18 to 24,Crimes Against the Person,North St.James Town
 2018,Male,35 to 44,Other Criminal Code Violations,Downtown Yonge East
 2016,Male,25 to 34,Controlled Drugs and Substances Act,York University Heights
@@ -28152,7 +28079,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2020,Male,<18,Crimes Against the Person,St.Andrew-Windfields
 2018,Female,18 to 24,Crimes Against the Person,Humbermede
 2017,Male,25 to 34,Crimes Against the Person,Junction-Wallace Emerson
-2016,Unknown,25 to 34,Crimes Against the Person,High Park North
 2019,Male,45 to 54,Criminal Code Traffic,Woburn North
 2017,Male,25 to 34,Crimes Against the Person,South Riverdale
 2021,Male,65+,Crimes Against the Person,Harbourfront-CityPlace
@@ -28483,7 +28409,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2019,Female,25 to 34,Other Criminal Code Violations,Clairlea-Birchmount
 2015,Female,45 to 54,Other Criminal Code Violations,Brookhaven-Amesbury
 2015,Male,55 to 64,Other Criminal Code Violations,Bayview Village
-2015,Male,45 to 54,Other Federal Statute Violations,Mount Dennis
 2018,Male,<18,Crimes Against the Person,Bendale-Glen Andrew
 2022,Male,35 to 44,Crimes Against the Person,The Beaches
 2018,Male,25 to 34,Other Criminal Code Violations,Danforth East York
@@ -28668,7 +28593,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2019,Female,<18,Crimes Against the Person,New Toronto
 2017,Male,18 to 24,Crimes Against the Person,Roncesvalles
 2021,Male,25 to 34,Other Criminal Code Violations,Rosedale-Moore Park
-2015,Unknown,18 to 24,Crimes Against the Person,Danforth
 2016,Male,<18,Crimes Against Property,NSA
 2021,Male,18 to 24,Crimes Against the Person,Rexdale-Kipling
 2019,Male,18 to 24,Crimes Against Property,Humewood-Cedarvale
@@ -29057,7 +28981,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2019,Female,35 to 44,Crimes Against Property,Harbourfront-CityPlace
 2018,Male,25 to 34,Crimes Against the Person,Yonge-Doris
 2018,Male,<18,Crimes Against the Person,Bathurst Manor
-2016,Unknown,25 to 34,Criminal Code Traffic,Henry Farm
 2015,Male,35 to 44,Other Criminal Code Violations,Lansing-Westgate
 2016,Male,65+,Crimes Against the Person,Harbourfront-CityPlace
 2015,Male,18 to 24,Crimes Against Property,Englemount-Lawrence
@@ -30123,7 +30046,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2022,Male,25 to 34,Other Criminal Code Violations,Annex
 2015,Male,18 to 24,Crimes Against Property,Mount Olive-Silverstone-Jamestown
 2018,Male,25 to 34,Crimes Against Property,Long Branch
-2019,Unknown,35 to 44,Other Criminal Code Violations,Woodbine Corridor
 2014,Female,18 to 24,Crimes Against Property,Englemount-Lawrence
 2019,Male,45 to 54,Crimes Against the Person,Harbourfront-CityPlace
 2022,Male,55 to 64,Crimes Against Property,Bendale-Glen Andrew
@@ -30363,7 +30285,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2020,Male,65+,Crimes Against the Person,Fenside-Parkwoods
 2016,Male,45 to 54,Crimes Against the Person,Edenbridge-Humber Valley
 2019,Female,35 to 44,Crimes Against Property,South Parkdale
-2019,Unknown,25 to 34,Other Criminal Code Violations,Casa Loma
 2019,Male,25 to 34,Crimes Against Property,Wexford/Maryvale
 2017,Male,35 to 44,Criminal Code Traffic,Annex
 2019,Female,25 to 34,Other Criminal Code Violations,Runnymede-Bloor West Village
@@ -30966,7 +30887,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2019,Female,45 to 54,Crimes Against Property,Westminster-Branson
 2017,Female,35 to 44,Crimes Against Property,Ionview
 2016,Male,35 to 44,Crimes Against the Person,Moss Park
-2022,Unknown,18 to 24,Other Criminal Code Violations,St Lawrence-East Bayfront-The Islands
 2022,Male,<18,Other Criminal Code Violations,Flemingdon Park
 2014,Male,55 to 64,Other Criminal Code Violations,Scarborough Village
 2018,Male,25 to 34,Controlled Drugs and Substances Act,Rexdale-Kipling
@@ -31116,11 +31036,9 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2015,Male,<18,Other Criminal Code Violations,Scarborough Village
 2022,Female,65+,Crimes Against the Person,The Beaches
 2019,Female,25 to 34,Crimes Against Property,Birchcliffe-Cliffside
-2015,Unknown,18 to 24,Controlled Drugs and Substances Act,Palmerston-Little Italy
 2021,Female,35 to 44,Other Criminal Code Violations,Glenfield-Jane Heights
 2021,Male,35 to 44,Crimes Against Property,Willowdale West
 2017,Male,35 to 44,Crimes Against Property,Cabbagetown-South St.James Town
-2015,Unknown,35 to 44,Other Criminal Code Violations,South Parkdale
 2021,Male,18 to 24,Crimes Against Property,Cabbagetown-South St.James Town
 2017,Male,25 to 34,Crimes Against Property,NSA
 2017,Male,<18,Controlled Drugs and Substances Act,Wexford/Maryvale
@@ -31488,7 +31406,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2015,Male,35 to 44,Crimes Against the Person,Dovercourt Village
 2022,Male,25 to 34,Crimes Against Property,Birchcliffe-Cliffside
 2018,Male,35 to 44,Crimes Against the Person,Bendale-Glen Andrew
-2019,Unknown,25 to 34,Other Criminal Code Violations,Harbourfront-CityPlace
 2015,Female,55 to 64,Crimes Against the Person,South Parkdale
 2020,Male,18 to 24,Crimes Against Property,Newtonbrook West
 2014,Female,18 to 24,Other Criminal Code Violations,Maple Leaf
@@ -31718,7 +31635,6 @@ arrest_year,sex,age_cohort,category,neighbourhood
 2019,Female,25 to 34,Crimes Against Property,The Beaches
 2020,Male,18 to 24,Crimes Against the Person,High Park North
 2017,Male,55 to 64,Other Criminal Code Violations,West Rouge
-2016,Unknown,25 to 34,Crimes Against Property,Fort York-Liberty Village
 2019,Female,35 to 44,Other Criminal Code Violations,Elms-Old Rexdale
 2020,Male,45 to 54,Crimes Against Property,Junction-Wallace Emerson
 2015,Male,35 to 44,Crimes Against the Person,L'Amoreaux West

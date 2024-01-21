@@ -25,7 +25,7 @@ read_csv(
 )
   
 
-head(police_clean_data)
+
 
 police_clean_data <-
   police_clean_data|>
@@ -37,25 +37,61 @@ cleaned_data <-
   police_clean_data |>
   janitor::clean_names() |>
   select("arrest_year", "sex",age_cohort,category,neighbourhood_158)|>
-  rename(neighbourhood=neighbourhood_158) 
- 
-head(cleaned_data)
+  rename(neighbourhood=neighbourhood_158)|> 
+ filter(sex %in% c("Male", "Female"),
+         category%in% c ("Controlled Drugs and Substances Act","Crimes Against Property",
+                         "Crimes Against the Person","Criminal Code Traffic","Other Criminal Code Violations"))
+ head(cleaned_data)
 
 write_csv(
   x = cleaned_data,
   file = "outputs/data/clean_data.csv"
 )
-analysis_data <-
+analysis_2022_category_data <-
   read_csv(
     "outputs/data/clean_data.csv",
     show_col_types = FALSE
   )
 
-  analysis_data <-
-    analysis_data |>
+
+analysis_2022_category_data <-
+  analysis_2022_category_data |>
   filter(arrest_year == 2022)
 
-head(analysis_data)
- sex_analysis_data <-
-  analysis_data |>
-  count(sex)
+
+
+head(analysis_2022_category_data)
+write_csv(
+  x = analysis_2022_category_data,
+  file = "outputs/data/analysis_2022_category_data.csv")
+
+year_2022_data <-
+  read_csv(file = here::here(
+    "outputs/data/clean_data.csv"),
+    show_col_types = FALSE
+  )
+year_2022_data <-
+  year_2022_data |>
+  filter(arrest_year == 2022) |> count(age_cohort)
+year_2022_data$year <- c("2022")  
+  
+head(year_2022_data)
+
+year_2021_data <-
+  read_csv(file = here::here(
+    "outputs/data/clean_data.csv"),
+    show_col_types = FALSE
+  )
+year_2021_data <-
+  year_2021_data |>
+  filter(arrest_year == 2021) |> count(age_cohort)
+year_2021_data$year <- c("2021")  
+
+head(year_2021_data)
+
+combinde_data<-rbind(year_2022_data,year_2021_data)
+head(combinde_data)
+write_csv(
+  x = combinde_data,
+  file = "outputs/data/combinde_data.csv"
+)
