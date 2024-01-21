@@ -28,12 +28,18 @@ police_resources <-
 str(police_resources)
 
 police_data <- get_resource(police_resources[1, ])
+
 str(police_data)
+
 
 write_csv(
   x = police_data,
   file = "inputs/data/police_data.csv"
 )
+
+
+
+
 
 
          
