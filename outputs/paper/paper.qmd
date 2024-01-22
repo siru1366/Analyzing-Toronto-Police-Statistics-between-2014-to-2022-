@@ -34,7 +34,34 @@ You can and should cross-reference sections and sub-sections.
 The remainder of this paper is structured as follows. @sec-data....
 
 # Data {#sec-data}
+first
+```{r}
+#| label: figue
+#| fig-cap: Relationship between crimes category and width
+#| echo: false
+#| warning: false
+#| message: false
 
+police_data <-
+  read_csv(file = here::here(
+    "outputs/data/clean_data.csv"),
+    show_col_types = FALSE
+  )
+
+
+ police_data |> 
+  ggplot(aes(x =arrest_year,fill =category)) +
+  geom_bar(alpha = 0.8) +
+  scale_fill_manual(values = c("darkorange","purple","cyan4","blue","red"),
+                    guide = "none")+
+
+  geom_bar() +
+  theme_minimal() +# Make the theme neater
+    facet_wrap(~category, ncol = 1) +
+  coord_flip()
+
+```
+second
 ```{r}
 #| label: fig-bills
 #| fig-cap: Bills of penguins
@@ -59,8 +86,35 @@ year_data|>
 
 Talk more about it.
 
-And also planes (@fig-planes). (You can change the height and width, but don't worry about doing that until you have finished every other aspect of the paper - Quarto will try to make it look nice and the defaults usually work well once you have enough text.)
+And also planes (@fig-planes). (You can change the height and width, but don't worry about doing that until you have finished every other aspect of the paper - Quarto will try to make it look nice and the 
+```{r}
+#| label: figue
+#| fig-cap: Relationship between crimes category and width
+#| echo: false
+#| warning: false
+#| message: false
 
+sex_data <-
+  read_csv(file = here::here(
+    "outputs/data/clean_data.csv"),
+    show_col_types = FALSE
+  )
+
+
+ sex_data |> 
+  ggplot(aes(x =sex,fill =sex)) +
+  geom_bar(alpha = 0.8) +
+  scale_fill_manual(values = c("red","blue"),
+                    guide = "none")+
+
+  geom_bar() +
+  theme_minimal() +# Make the theme neater
+    facet_wrap(~category, ncol = 1) +
+  coord_flip()
+
+```
+
+third
 ```{r}
 #| label: fig-planes
 #| fig-cap: Relationship between crimes category and width
