@@ -40,7 +40,10 @@ cleaned_data <-
   rename(neighbourhood=neighbourhood_158)|> 
  filter(sex %in% c("Male", "Female"),
          category%in% c ("Controlled Drugs and Substances Act","Crimes Against Property",
-                         "Crimes Against the Person","Criminal Code Traffic","Other Criminal Code Violations"))
+                         "Crimes Against the Person","Criminal Code Traffic",
+                         "Other Criminal Code Violations"),
+      age_cohort %in% c("18 to 24", "25 to 34","35 to 44","45 to 54",
+                  "55 to 64","65+","<18"))
  head(cleaned_data)
 
 write_csv(
@@ -183,3 +186,18 @@ write_csv(
   x = combinde_data,
   file = "outputs/data/combinde_data.csv"
 )
+
+police_locate_data <-
+  read_csv(file = here::here(
+    "outputs/data/clean_data.csv"),
+    show_col_types = FALSE
+  ) |> count(neighbourhood)|>filter(n >= 370)
+ head(police_locate_data)
+ 
+ plice_neighbourhood_date<-
+   read_csv(file = here::here(
+     "outputs/data/clean_data.csv"),
+     show_col_types = FALSE)|>filter(neighbourhood%in% c("Annex",
+                          "Downtown Yonge East","Kensington-Chinatown","NSA",	
+                         "Wellington Place","	York University Heights"))
+ 

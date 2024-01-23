@@ -1,5 +1,5 @@
 ---
-title: "Toronro police annual statistical report arrested-and-charged-persons"
+title: "Analyzing Toronto Police  Statistics between 2014 to 2022"
 subtitle: "arrested-and-charged-person"
 author: 
   - Sirui Tan
@@ -34,10 +34,35 @@ You can and should cross-reference sections and sub-sections.
 The remainder of this paper is structured as follows. @sec-data....
 
 # Data {#sec-data}
-first
+
 ```{r}
-#| label: figue
+#| label: fig-overall
 #| fig-cap: Relationship between crimes category and width
+#| echo: false
+#| warning: false
+#| message: false
+
+police_overall_data <-
+  read_csv(file = here::here(
+    "outputs/data/clean_data.csv"),
+    show_col_types = FALSE
+  )
+
+
+police_overall_data |> 
+  ggplot(aes(x =arrest_year,fill = as.factor(arrest_year), color =as.factor(arrest_year))) +
+   geom_bar() +
+    
+  theme_minimal() +# Make the theme neater
+  labs(x = "year", y = "Number") # Make labels more meaningful
+```
+
+Upon analyzing the planes @fig-overall representation, discernible fluctuations in Toronto's crime rate over the years are apparent, resembling the characteristic curve of a quadratic function with an upward orientation. The nadir in 2020 coincides notably with the implementation of a city-wide closure policy in response to the COVID-19 outbreak. This correlation suggests a nuanced relationship between public health measures and the dynamics of criminal activity, warranting further exploration into the interplay of societal and environmental factors influencing urban safety trends.
+@fig-planes
+
+```{r}
+#| label: category-figue
+#| fig-cap: Relationship between crimes  and year
 #| echo: false
 #| warning: false
 #| message: false
@@ -83,9 +108,54 @@ year_data|>
 
 
 ```
+we
+```{r}
+#| label: locate-plane
+#| fig-cap: Relationship between crimes category and width
+#| echo: false
+#| warning: false
+#| message: false
 
+police_locate_data <-
+  read_csv(file = here::here(
+    "outputs/data/clean_data.csv"),
+    show_col_types = FALSE
+  )|>filter(neighbourhood  %in% c("Annex","Downtown Yonge East","Kensington-Chinatown","NSA",	
+                         "Wellington Place","York University Heights"))
+ 
+
+police_locate_data |> ggplot(aes(x = neighbourhood, fill = as.factor(arrest_year), color = as.factor(arrest_year))) +
+  geom_bar(position = "stack") +
+  theme_minimal() +
+  labs(x = "Location", y = "Count")+
+   coord_flip()
+
+
+```
 Talk more about it.
+```{r}
+#| label: gender-planes
+#| fig-cap: Relationship between crimes category and width
+#| echo: false
+#| warning: false
+#| message: false
 
+police_gender_data <-
+  read_csv(file = here::here(
+    "outputs/data/clean_data.csv"),
+    show_col_types = FALSE
+  )
+ 
+
+police_gender_data |> 
+  # Use ggplot to create a stacked bar plot for police age data
+  ggplot(aes(x =category, fill = sex, color = sex)) +
+  geom_bar(position = "stack") +  # Create a stacked bar plot
+  theme_minimal() +# Use a minimal theme
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(x = "category", y = "Count")  # Set meaningful axis labels
+
+```
 And also planes (@fig-planes). (You can change the height and width, but don't worry about doing that until you have finished every other aspect of the paper - Quarto will try to make it look nice and the 
 ```{r}
 #| label: figue
@@ -146,122 +216,7 @@ The goal of our modelling strategy is twofold. Firstly,...
 
 Here we briefly describe the Bayesian analysis model used to investigate... Background details and diagnostics are included in [Appendix -@sec-model-details].
 
-## Model set-up
 
-Define $y_i$ as the number of seconds that the plane remained aloft. Then $\beta_i$ is the wing width and $\gamma_i$ is the wing length, both measured in millimeters.
-
-```{=tex}
-\begin{align} 
-y_i|\mu_i, \sigma &\sim \mbox{Normal}(\mu_i, \sigma) \\
-\mu_i &= \alpha + \beta_i + \gamma_i\\
-\alpha &\sim \mbox{Normal}(0, 2.5) \\
-\beta &\sim \mbox{Normal}(0, 2.5) \\
-\gamma &\sim \mbox{Normal}(0, 2.5) \\
-\sigma &\sim \mbox{Exponential}(1)
-\end{align}
-```
 We run the model in R [@citeR] using the `rstanarm` package of @rstanarm. We use the default priors from `rstanarm`.
 
-### Model justification
-
-We expect a positive relationship between the size of the wings and time spent aloft. In particular...
-
-We can use maths by including latex between dollar signs, for instance $\theta$.
-
-# Results
-
-Our results are summarized in @tbl-modelresults.
-
-```{r}
-#| echo: false
-#| eval: true
-#| warning: false
-#| message: false
-
-library(rstanarm)
-
-first_model <-
-  readRDS(file = here::here("outputs/models/first_model.rds"))
-```
-
-```{r}
-#| echo: false
-#| eval: true
-#| label: tbl-modelresults
-#| tbl-cap: "Explanatory models of flight time based on wing width and wing length"
-#| warning: false
-
-modelsummary::modelsummary(
-  list(
-    "First model" = first_model
-  ),
-  statistic = "mad",
-  fmt = 2
-)
-```
-
-# Discussion
-
-## First discussion point {#sec-first-point}
-
-If my paper were 10 pages, then should be be at least 2.5 pages. The discussion is a chance to show off what you know and what you learnt from all this.
-
-## Second discussion point
-
-## Third discussion point
-
-## Weaknesses and next steps
-
-Weaknesses and next steps should also be included.
-
-\newpage
-
-\appendix
-
-# Appendix {.unnumbered}
-
-# Additional data details
-
-# Model details {#sec-model-details}
-
-## Posterior predictive check
-
-In @fig-ppcheckandposteriorvsprior-1 we implement a posterior predictive check. This shows...
-
-In @fig-ppcheckandposteriorvsprior-2 we compare the posterior with the prior. This shows...
-
-```{r}
-#| eval: true
-#| echo: false
-#| message: false
-#| warning: false
-#| label: fig-ppcheckandposteriorvsprior
-#| layout-ncol: 2
-#| fig-cap: "Examining how the model fits, and is affected by, the data"
-#| fig-subcap: ["Posterior prediction check", "Comparing the posterior with the prior"]
-
-
-```
-
-## Diagnostics
-
-@fig-stanareyouokay-1 is a trace plot. It shows... This suggests...
-
-@fig-stanareyouokay-2 is a Rhat plot. It shows... This suggests...
-
-```{r}
-#| echo: false
-#| eval: true
-#| message: false
-#| warning: false
-#| label: fig-stanareyouokay
-#| fig-cap: "Checking the convergence of the MCMC algorithm"
-#| fig-subcap: ["Trace plot", "Rhat plot"]
-#| layout-ncol: 2
-
-
-```
-
-\newpage
-
-# References
+# Reference
