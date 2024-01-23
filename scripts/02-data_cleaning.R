@@ -201,3 +201,4 @@ police_locate_data <-
                           "Downtown Yonge East","Kensington-Chinatown","NSA",	
                          "Wellington Place","	York University Heights"))
  
+ 
