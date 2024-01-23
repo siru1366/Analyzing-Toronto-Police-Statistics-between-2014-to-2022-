@@ -20,6 +20,8 @@ bibliography: references.bib
 
 library(tidyverse)
 library(palmerpenguins)
+library(readr)
+
 ```
 
 # Introduction
@@ -69,8 +71,7 @@ Firstli,upon analyzing the planes @fig-overall representation, discernible fluct
 #| message: false
 
 police_data <-
-  read_csv(file = here::here(
-    "outputs/data/clean_data.csv"),
+  read_csv(file = here::here("outputs/data/clean_data.csv"),
     show_col_types = FALSE
   )
 
@@ -90,6 +91,34 @@ police_data <-
 An examination solely focused on the aggregate count of criminal incidents per annum yields a somewhat overarching perspective. To cultivate a more nuanced understanding, it becomes imperative to conduct a more granular analysis that delves into the intricate details and specific categories of criminal activities. 
 \ The analysis of criminal conduct in Toronto reveals a discernible classification into five distinct categories. Drawing upon data @fig-category spanning the preceding nine years, a prominent pattern emerges, underscoring that the primary forms of criminality center around property infringement and threats to personal safety. This nuanced observation underscores the significance of addressing these specific dimensions within the context of Toronto's criminal landscape.  
 \ Significantly, an observable downward trajectory characterizes the incidence of offenses falling within the purview of the Controlled Drugs and Substances Act. This noteworthy trend underscores a discernible reduction in such infractions, prompting a consideration of potential contributing factors or policy implications within the framework of legislative oversight and societal dynamics.
+
+```{r}
+#| label: fig-location
+#| fig-cap: Relationship between crimes category and width
+#| echo: false
+#| warning: false
+#| message: false
+
+police_locate_data <-
+  read_csv(file = here::here(
+    "outputs/data/clean_data.csv"),
+    show_col_types = FALSE
+  )|>filter(neighbourhood  %in% c("Annex","Downtown Yonge East","Kensington-Chinatown","NSA",	
+                         "Wellington Place","York University Heights"))
+ 
+
+police_locate_data |> ggplot(aes(x = neighbourhood, fill = as.factor(arrest_year), color = as.factor(arrest_year))) +
+  geom_bar(position = "stack") +
+  theme_minimal() +
+  labs(x = "Location", y = "Count")+
+   coord_flip()
+
+
+```
+Beyond the classification based on the nature of the crime, the geographical context of criminal incidents also holds paramount significance in crime analysis. The primary dataset encompasses an extensive list of 158 distinct streets in Toronto, rendering it operationally unwieldy for presentation purposes. In the interest of visual clarity and expediency, a pragmatic approach is adopted, focusing specifically on the six blocks that emerge as the most frequent locations for criminal activities. This judicious selection facilitates a more focused and manageable exploration of spatial patterns within the broader landscape of criminal occurrences. @fig-location
+\ The neighborhood known as NSA (Neighborhood Security Analysis) in Toronto registers the highest incidence of criminal activities, exhibiting a prevalence that is nearly twofold compared to the area occupying the second position in the ranking. This noteworthy observation underscores the pronounced concentration of criminal incidents within the NSA region, necessitating a comprehensive examination to discern underlying factors contributing to such a discernable disparity in crime rates across different locales in Toronto.
+
+
 
 ```{r}
 #| label: fig-age
@@ -113,29 +142,7 @@ year_data|>
 
 ```
 we
-```{r}
-#| label: locate-plane
-#| fig-cap: Relationship between crimes category and width
-#| echo: false
-#| warning: false
-#| message: false
 
-police_locate_data <-
-  read_csv(file = here::here(
-    "outputs/data/clean_data.csv"),
-    show_col_types = FALSE
-  )|>filter(neighbourhood  %in% c("Annex","Downtown Yonge East","Kensington-Chinatown","NSA",	
-                         "Wellington Place","York University Heights"))
- 
-
-police_locate_data |> ggplot(aes(x = neighbourhood, fill = as.factor(arrest_year), color = as.factor(arrest_year))) +
-  geom_bar(position = "stack") +
-  theme_minimal() +
-  labs(x = "Location", y = "Count")+
-   coord_flip()
-
-
-```
 Talk more about it.
 ```{r}
 #| label: gender-planes
@@ -153,11 +160,10 @@ police_gender_data <-
 
 police_gender_data |> 
   # Use ggplot to create a stacked bar plot for police age data
-  ggplot(aes(x =category, fill = sex, color = sex)) +
+  ggplot(aes(x =age_cohort, fill = sex, color = sex)) +
   geom_bar(position = "stack") +  # Create a stacked bar plot
   theme_minimal() +# Use a minimal theme
-  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-  labs(x = "category", y = "Count")  # Set meaningful axis labels
+  labs(x = "age_cohort", y = "Count")  # Set meaningful axis labels
 
 ```
 
