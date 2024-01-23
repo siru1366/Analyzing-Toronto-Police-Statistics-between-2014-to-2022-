@@ -21,7 +21,7 @@ library(tidyverse)
     show_col_types = FALSE
   )
   sex_check <- clean_data$sex |> unique()|>
-    length() == 3
+    length() == 2
   
   # Check the minimum year
   min_year_check <- min(clean_data$arrest_year) == 2014

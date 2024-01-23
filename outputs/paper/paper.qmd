@@ -7,7 +7,7 @@ author:
 thanks: "Code and data are available at: https://github.com/siru1366/starter-folder.git."
 date: "22 Janaury, 2024"
 date-format: long
-abstract: "According to police statistics, as a branch of crime statistics, Toronto Police statistics comprehensively depict the gender/age groups/crime types of individuals arrested in Toronto from 2014 to 2022. Second sentence. Third sentence. Fourth sentence."
+abstract: "According to police statistics, as a branch of crime statistics, Toronto Police statistics comprehensively depict the gender,age groups,crime types of individuals arrested,location, in Toronto from 2014 to 2022.This study delves into Toronto's crime dynamics, revealing a distinctive quadratic pattern in crime rates, notably dipping in 2020 during the city-wide closure. A nuanced classification of criminal conduct over nine years underscores a focus on property infringement and personal safety threats. The Controlled Drugs and Substances Act exhibits a noteworthy downward trend, prompting considerations of contributing factors and policy implications. Geographical analysis emphasizes six high-crime blocks, with the NSA neighborhood standing out for its significant crime prevalence. Age-based cartography reveals the persistent dominance of the 25-44 age bracket among offenders, while a surge in juvenile crimes in 2022 calls for collaborative societal interventions."
 format: pdf
 number-sections: true
 bibliography: references.bib
@@ -29,6 +29,7 @@ library(readr)
 Criminal statistics, particularly within the domain of policing, serve as a vital instrument in comprehending and addressing patterns of criminal behavior within society. Toronto Police statistics, as an exemplar in this context, offer a meticulous portrayal of the demographic dynamics and criminal typologies characterizing arrests within the city from the temporal span of 2014 to 2022. Such statistical analyses provide a nuanced understanding of the intricate interplay between law enforcement efforts and the evolving landscape of criminal activities.  
 \ The field of criminal statistics functions as a branch of criminology, offering empirical insights into the prevalence, distribution, and trends of criminal incidents. Policing agencies, including the Toronto Police, routinely engage in the systematic collection, analysis, and interpretation of data derived from their law enforcement activities. These statistics encapsulate a multifaceted depiction of criminal occurrences, spanning diverse facets such as the demographics of apprehended individuals, the temporal distribution of criminal incidents, and the categorization of offenses according to their nature and severity.  
 \ Toronto Police statistics, with their temporal range extending from 2014 to 2022, encapsulate an extensive period characterized by shifts in societal dynamics, legislative alterations, and advancements in law enforcement strategies. The juxtaposition of gender, age cohorts, and crime types in these statistics elucidates the differential impact of law enforcement efforts across various demographic groups and crime categories. Such granularity facilitates a more nuanced understanding of the socio-criminological landscape, enabling policymakers, researchers, and law enforcement agencies to tailor interventions effectively.
+\ This study delves into the multifaceted facets of Toronto's crime landscape, employing a curious and analytical lens to dissect established patterns and explore emerging dynamics. The @fig-overall representation, resembling a quadratic function, initiates a dialogue on the intriguing interplay between public health interventions and crime rates. The subsequent shift towards a more granular analysis, as proposed, aligns with the pursuit of deeper insights.
 
 You can and should cross-reference sections and sub-sections.
 
@@ -36,6 +37,8 @@ The remainder of this paper is structured as follows. @sec-data....
 
 # Data {#sec-data}
 
+The data employed in this paper was sourced from the opendatatoronto Library of the City of Toronto (@opendatatoronto). Specifically, the dataset utilized is titled Police Annual Statistical Report - Arrested and Charged Persons @torontodataset from the Toronto Police Services.
+Data cleaning and analysis were conducted using the open-source statistical programming language R (@citeR), leveraging functionalities from the tidyverse (@tidyverse) suite, including ggplot2 (@ggplot2), dplyr (@dplyr), readr (@readr), tibble (@tibble), janitor (@janitor), stringr (@stringr), and knitr (@knitr). The detailed procedures for data extraction and cleaning are expounded upon in the subsequent subsections.
 ```{r}
 #| label: fig-overall
 #| fig-cap: Relationship between crimes and year
@@ -58,7 +61,7 @@ police_overall_data |>
   labs(x = "year", y = "Number") # Make labels more meaningful
 ```
 
-Firstli,upon analyzing the planes @fig-overall representation, discernible fluctuations in Toronto's crime rate over the years are apparent, resembling the characteristic curve of a quadratic function with an upward orientation. The nadir in 2020 coincides notably with the implementation of a city-wide closure policy in response to the COVID-19 outbreak. This correlation suggests a nuanced relationship between public health measures and the dynamics of criminal activity, warranting further exploration into the interplay of societal and environmental factors influencing urban safety trends.
+Firstly,upon analyzing the planes @fig-overall representation, discernible fluctuations in Toronto's crime rate over the years are apparent, resembling the characteristic curve of a quadratic function with an upward orientation. The nadir in 2020 coincides notably with the implementation of a city-wide closure policy in response to the COVID-19 outbreak. This correlation suggests a nuanced relationship between public health measures and the dynamics of criminal activity, warranting further exploration into the interplay of societal and environmental factors influencing urban safety trends.
 
 
 
@@ -204,7 +207,7 @@ By employing various screening methodologies, we can discern the gender distribu
 
 
 
-We run the model in R [@citeR] using the `rstanarm` package of @rstanarm. We use the default priors from `rstanarm`.
+
 
 
 # Reference
