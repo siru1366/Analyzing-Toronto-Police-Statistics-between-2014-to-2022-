@@ -4,8 +4,8 @@ subtitle: "arrested-and-charged-person"
 author: 
   - Sirui Tan
   
-thanks: "Code and data are available at: LINK."
-date: today
+thanks: "Code and data are available at: https://github.com/siru1366/starter-folder.git."
+date: "22 Janaury, 2024"
 date-format: long
 abstract: "According to police statistics, as a branch of crime statistics, Toronto Police statistics comprehensively depict the gender/age groups/crime types of individuals arrested in Toronto from 2014 to 2022. Second sentence. Third sentence. Fourth sentence."
 format: pdf
@@ -24,7 +24,6 @@ library(palmerpenguins)
 
 # Introduction
 
-
 Criminal statistics, particularly within the domain of policing, serve as a vital instrument in comprehending and addressing patterns of criminal behavior within society. Toronto Police statistics, as an exemplar in this context, offer a meticulous portrayal of the demographic dynamics and criminal typologies characterizing arrests within the city from the temporal span of 2014 to 2022. Such statistical analyses provide a nuanced understanding of the intricate interplay between law enforcement efforts and the evolving landscape of criminal activities.  
 \ The field of criminal statistics functions as a branch of criminology, offering empirical insights into the prevalence, distribution, and trends of criminal incidents. Policing agencies, including the Toronto Police, routinely engage in the systematic collection, analysis, and interpretation of data derived from their law enforcement activities. These statistics encapsulate a multifaceted depiction of criminal occurrences, spanning diverse facets such as the demographics of apprehended individuals, the temporal distribution of criminal incidents, and the categorization of offenses according to their nature and severity.  
 \ Toronto Police statistics, with their temporal range extending from 2014 to 2022, encapsulate an extensive period characterized by shifts in societal dynamics, legislative alterations, and advancements in law enforcement strategies. The juxtaposition of gender, age cohorts, and crime types in these statistics elucidates the differential impact of law enforcement efforts across various demographic groups and crime categories. Such granularity facilitates a more nuanced understanding of the socio-criminological landscape, enabling policymakers, researchers, and law enforcement agencies to tailor interventions effectively.
@@ -37,7 +36,7 @@ The remainder of this paper is structured as follows. @sec-data....
 
 ```{r}
 #| label: fig-overall
-#| fig-cap: Relationship between crimes category and width
+#| fig-cap: Relationship between crimes and year
 #| echo: false
 #| warning: false
 #| message: false
@@ -57,12 +56,14 @@ police_overall_data |>
   labs(x = "year", y = "Number") # Make labels more meaningful
 ```
 
-Upon analyzing the planes @fig-overall representation, discernible fluctuations in Toronto's crime rate over the years are apparent, resembling the characteristic curve of a quadratic function with an upward orientation. The nadir in 2020 coincides notably with the implementation of a city-wide closure policy in response to the COVID-19 outbreak. This correlation suggests a nuanced relationship between public health measures and the dynamics of criminal activity, warranting further exploration into the interplay of societal and environmental factors influencing urban safety trends.
-@fig-planes
+Firstli,upon analyzing the planes @fig-overall representation, discernible fluctuations in Toronto's crime rate over the years are apparent, resembling the characteristic curve of a quadratic function with an upward orientation. The nadir in 2020 coincides notably with the implementation of a city-wide closure policy in response to the COVID-19 outbreak. This correlation suggests a nuanced relationship between public health measures and the dynamics of criminal activity, warranting further exploration into the interplay of societal and environmental factors influencing urban safety trends.
+
+
+
 
 ```{r}
-#| label: category-figue
-#| fig-cap: Relationship between crimes  and year
+#| label: fig-category
+#| fig-cap: Relationship between crimes category and year
 #| echo: false
 #| warning: false
 #| message: false
@@ -86,10 +87,13 @@ police_data <-
   coord_flip()
 
 ```
-second
+An examination solely focused on the aggregate count of criminal incidents per annum yields a somewhat overarching perspective. To cultivate a more nuanced understanding, it becomes imperative to conduct a more granular analysis that delves into the intricate details and specific categories of criminal activities. 
+\ The analysis of criminal conduct in Toronto reveals a discernible classification into five distinct categories. Drawing upon data @fig-category spanning the preceding nine years, a prominent pattern emerges, underscoring that the primary forms of criminality center around property infringement and threats to personal safety. This nuanced observation underscores the significance of addressing these specific dimensions within the context of Toronto's criminal landscape.  
+\ Significantly, an observable downward trajectory characterizes the incidence of offenses falling within the purview of the Controlled Drugs and Substances Act. This noteworthy trend underscores a discernible reduction in such infractions, prompting a consideration of potential contributing factors or policy implications within the framework of legislative oversight and societal dynamics.
+
 ```{r}
-#| label: fig-bills
-#| fig-cap: Bills of penguins
+#| label: fig-age
+#| fig-cap: Relationship between age and year
 #| echo: false
 
 year_data <-
@@ -156,7 +160,7 @@ police_gender_data |>
   labs(x = "category", y = "Count")  # Set meaningful axis labels
 
 ```
-And also planes (@fig-planes). (You can change the height and width, but don't worry about doing that until you have finished every other aspect of the paper - Quarto will try to make it look nice and the 
+
 ```{r}
 #| label: figue
 #| fig-cap: Relationship between crimes category and width
@@ -184,7 +188,7 @@ sex_data <-
 
 ```
 
-third
+
 ```{r}
 #| label: fig-planes
 #| fig-cap: Relationship between crimes category and width
@@ -208,15 +212,10 @@ analysis_data <-
   labs(x = "category", y = "Number of category") # Make labels more meaningful
 ```
 
-Talk way more about it.
 
-# Model
-
-The goal of our modelling strategy is twofold. Firstly,...
-
-Here we briefly describe the Bayesian analysis model used to investigate... Background details and diagnostics are included in [Appendix -@sec-model-details].
 
 
 We run the model in R [@citeR] using the `rstanarm` package of @rstanarm. We use the default priors from `rstanarm`.
+
 
 # Reference
