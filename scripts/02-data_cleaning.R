@@ -197,8 +197,6 @@ police_locate_data <-
  plice_neighbourhood_date<-
    read_csv(file = here::here(
      "outputs/data/clean_data.csv"),
-     show_col_types = FALSE)|>filter(neighbourhood%in% c("Annex",
-                          "Downtown Yonge East","Kensington-Chinatown","NSA",	
-                         "Wellington Place","	York University Heights"))
+     show_col_types = FALSE)|>count(neighbourhood)
  
  
