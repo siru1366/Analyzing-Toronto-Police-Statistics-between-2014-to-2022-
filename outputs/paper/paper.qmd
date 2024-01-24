@@ -24,6 +24,16 @@ library(readr)
 
 ```
 
+# Context
+
+## Introduction
+
+## Data 
+
+
+## Reference
+
+
 # Introduction
 
 Criminal statistics, particularly within the domain of policing, serve as a vital instrument in comprehending and addressing patterns of criminal behavior within society. Toronto Police statistics, as an exemplar in this context, offer a meticulous portrayal of the demographic dynamics and criminal typologies characterizing arrests within the city from the temporal span of 2014 to 2022. Such statistical analyses provide a nuanced understanding of the intricate interplay between law enforcement efforts and the evolving landscape of criminal activities.  
