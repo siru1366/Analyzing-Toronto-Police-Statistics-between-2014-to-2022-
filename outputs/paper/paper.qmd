@@ -1,6 +1,6 @@
 ---
 title: "Analyzing Toronto Police  Statistics between 2014 to 2022"
-subtitle: "arrested-and-charged-person"
+
 author: 
   - Sirui Tan
   
@@ -30,25 +30,30 @@ library(readr)
 
 ## Data 
 
+## discussion
+### Yearly Trends: Statistics on the Occurrence of Five Major Crime Categories
+### Spatial and Temporal Analysis of Crime Incidents Across Toronto Neighborhoods Over the Years
+### Temporal Variation in Crime Incidents Across Different Age Cohorts
+### Demographic Analysis of Crime Incidents: A Cross-Sectional Study on Gender and Age Groups
+### Gender-Based Distribution of Crime Types: An In-Depth Analysis Across Different Offenses
 
 ## Reference
+
+
 
 
 # Introduction
 
 Criminal statistics, particularly within the domain of policing, serve as a vital instrument in comprehending and addressing patterns of criminal behavior within society. Toronto Police statistics, as an exemplar in this context, offer a meticulous portrayal of the demographic dynamics and criminal typologies characterizing arrests within the city from the temporal span of 2014 to 2022. Such statistical analyses provide a nuanced understanding of the intricate interplay between law enforcement efforts and the evolving landscape of criminal activities.  
-\ The field of criminal statistics functions as a branch of criminology, offering empirical insights into the prevalence, distribution, and trends of criminal incidents. Policing agencies, including the Toronto Police, routinely engage in the systematic collection, analysis, and interpretation of data derived from their law enforcement activities. These statistics encapsulate a multifaceted depiction of criminal occurrences, spanning diverse facets such as the demographics of apprehended individuals, the temporal distribution of criminal incidents, and the categorization of offenses according to their nature and severity.  
-\ Toronto Police statistics, with their temporal range extending from 2014 to 2022, encapsulate an extensive period characterized by shifts in societal dynamics, legislative alterations, and advancements in law enforcement strategies. The juxtaposition of gender, age cohorts, and crime types in these statistics elucidates the differential impact of law enforcement efforts across various demographic groups and crime categories. Such granularity facilitates a more nuanced understanding of the socio-criminological landscape, enabling policymakers, researchers, and law enforcement agencies to tailor interventions effectively.
-\ This study delves into the multifaceted facets of Toronto's crime landscape, employing a curious and analytical lens to dissect established patterns and explore emerging dynamics. The @fig-overall representation, resembling a quadratic function, initiates a dialogue on the intriguing interplay between public health interventions and crime rates. The subsequent shift towards a more granular analysis, as proposed, aligns with the pursuit of deeper insights.
+\ In the preliminary stage of this research, an examination was conducted to assess the fluctuations in Toronto's crime rates spanning the years 2014 to 2022. The findings depicted a distinctive pattern characterized by an initial decrease, followed by a subsequent rise, with a minimum observed in 2020. Acknowledging the necessity for a more nuanced comprehension, the study proceeds to a more in-depth analysis, incorporating four additional variables: gender, age group, crime type, and region. These variables are systematically paired, enabling a comprehensive exploration of their interdependencies, offering insights beyond the broad trends observed in the overall crime rate. 
+\ In the data section, a clear presentation of the data is provided, organized by year. Transitioning to the discussion section, a more intricate analysis unfolds as the data undergoes further examination through the amalgamation of five distinct sets of variables. The subsequent shift towards a more granular analysis, as proposed, aligns with the pursuit of deeper insights.
 
-You can and should cross-reference sections and sub-sections.
 
-The remainder of this paper is structured as follows. @sec-data....
 
 # Data {#sec-data}
 
 The data employed in this paper was sourced from the opendatatoronto Library of the City of Toronto (@opendatatoronto). Specifically, the dataset utilized is titled Police Annual Statistical Report - Arrested and Charged Persons @torontodataset from the Toronto Police Services.
-Data cleaning and analysis were conducted using the open-source statistical programming language R (@citeR), leveraging functionalities from the tidyverse (@tidyverse) suite, including ggplot2 (@ggplot2), dplyr (@dplyr), readr (@readr), tibble (@tibble), janitor (@janitor), stringr (@stringr), and knitr (@knitr). The detailed procedures for data extraction and cleaning are expounded upon in the subsequent subsections.
+Data cleaning and analysis were conducted using the open-source statistical programming language R (@citeR), leveraging functionalities from the tidyverse (@tidyverse) suite, including ggplot2 (@ggplot2), dplyr (@dplyr), readr (@readr), tibble (@tibble),stringr (@stringr) ,janitor (@janitor) and knitr (@knitr). The detailed procedures for data extraction and cleaning are expounded upon in the subsequent subsections.
 ```{r}
 #| label: fig-overall
 #| fig-cap: Relationship between crimes and year
@@ -71,14 +76,18 @@ police_overall_data |>
   labs(x = "year", y = "Number") # Make labels more meaningful
 ```
 
-Firstly,upon analyzing the planes @fig-overall representation, discernible fluctuations in Toronto's crime rate over the years are apparent, resembling the characteristic curve of a quadratic function with an upward orientation. The nadir in 2020 coincides notably with the implementation of a city-wide closure policy in response to the COVID-19 outbreak. This correlation suggests a nuanced relationship between public health measures and the dynamics of criminal activity, warranting further exploration into the interplay of societal and environmental factors influencing urban safety trends.
+Overall,upon analyzing the planes @fig-overall representation, discernible fluctuations in Toronto's crime rate over the years are apparent, resembling the characteristic curve of a quadratic function with an upward orientation. The nadir in 2020 coincides notably with the implementation of a city-wide closure policy in response to the COVID-19 outbreak.@HODGKINSON2022101881  indicated that amidst the COVID-19 epidemic, Toronto experienced a notable reduction in its crime rate, attributable to a myriad of governmental control policies . 
 
 
+# discusssion
+An examination solely focused on the aggregate count of criminal incidents per annum yields a somewhat overarching perspective. To cultivate a more nuanced understanding, it becomes imperative to conduct a more granular analysis that delves into the intricate details and specific categories of criminal activities. 
+\ In the discussion section, a dual-stage scrutiny of Toronto offender data is conducted.
 
+## Yearly Trends: Statistics on the Occurrence of Five Major Crime Categories
 
 ```{r}
 #| label: fig-category
-#| fig-cap: Relationship between crimes category and year
+#| fig-cap: Yearly Trends—Statistics on the Occurrence of Five Major Crime Categories
 #| echo: false
 #| warning: false
 #| message: false
@@ -101,13 +110,12 @@ police_data <-
   coord_flip()
 
 ```
-An examination solely focused on the aggregate count of criminal incidents per annum yields a somewhat overarching perspective. To cultivate a more nuanced understanding, it becomes imperative to conduct a more granular analysis that delves into the intricate details and specific categories of criminal activities. 
-\ The analysis of criminal conduct in Toronto reveals a discernible classification into five distinct categories. Drawing upon data @fig-category spanning the preceding nine years, a prominent pattern emerges, underscoring that the primary forms of criminality center around property infringement and threats to personal safety. This nuanced observation underscores the significance of addressing these specific dimensions within the context of Toronto's criminal landscape.  
-\ Significantly, an observable downward trajectory characterizes the incidence of offenses falling within the purview of the Controlled Drugs and Substances Act. This noteworthy trend underscores a discernible reduction in such infractions, prompting a consideration of potential contributing factors or policy implications within the framework of legislative oversight and societal dynamics.
+ The analysis of criminal conduct in Toronto reveals a discernible classification into five distinct categories. Drawing upon data @fig-category spanning the preceding nine years, a prominent pattern emerges, underscoring that the primary forms of criminality center around property infringement and threats to personal safety. This nuanced observation underscores the significance of addressing these specific dimensions within the context of Toronto's criminal landscape.  
+\ Significantly, an observable downward trajectory characterizes the incidence of offenses falling within the purview of the Controlled Drugs and Substances Act.
 
 ```{r}
 #| label: fig-location
-#| fig-cap: Relationship between crimes category and location
+#| fig-cap: Spatial and Temporal Analysis of Crime Incidents Across Toronto Neighborhoods Over the Years
 #| echo: false
 #| warning: false
 #| message: false
@@ -128,14 +136,15 @@ police_locate_data |> ggplot(aes(x = neighbourhood, fill = as.factor(arrest_year
 
 
 ```
+## Spatial and Temporal Analysis of Crime Incidents Across Toronto Neighborhoods Over the Years
 Beyond the classification based on the nature of the crime, the geographical context of criminal incidents also holds paramount significance in crime analysis. The primary dataset encompasses an extensive list of 158 distinct streets in Toronto, rendering it operationally unwieldy for presentation purposes. In the interest of visual clarity and expediency, a pragmatic approach is adopted, focusing specifically on the six blocks that emerge as the most frequent locations for criminal activities. This judicious selection facilitates a more focused and manageable exploration of spatial patterns within the broader landscape of criminal occurrences. @fig-location
-\ The neighborhood known as NSA (Neighborhood Security Analysis) in Toronto registers the highest incidence of criminal activities, exhibiting a prevalence that is nearly twofold compared to the area occupying the second position in the ranking. This noteworthy observation underscores the pronounced concentration of criminal incidents within the NSA region, necessitating a comprehensive examination to discern underlying factors contributing to such a discernable disparity in crime rates across different locales in Toronto.
+\ The neighborhood known as NSA (Neighborhood Security Analysis) in Toronto registers the highest incidence of criminal activities, exhibiting a prevalence that is nearly twofold compared to the area occupying the second position in the ranking. 
 
 
 
 ```{r}
 #| label: fig-age
-#| fig-cap: Relationship between age and yearly crimes
+#| fig-cap: Temporal Variation in Crime Incidents Across Different Age Cohorts
 #| echo: false
 
 year_data <-
@@ -154,15 +163,16 @@ year_data|>
 
 
 ```
+## Temporal Variation in Crime Incidents Across Different Age Cohorts
 The cartography of offenders holds a pivotal role in comprehensive crime analysis, particularly when delineating them based on age categories. This stratification allows for the identification of specific age cohorts warranting heightened scrutiny and focused attention. This meticulous categorization aids in discerning nuanced patterns within the demographic landscape of offenders, contributing substantively to a more refined understanding of the interplay between age dynamics and criminal behavior.
 \ Over the course of the past nine years, the predominant demographic among offenders in Toronto has consistently manifested within the age bracket spanning from 25 to 44 years. @fig-age
-\ It is crucial to highlight that the incidence of juvenile crimes in Toronto has shown an elevation in the year 2022 when juxtaposed against the preceding year. This discernible rise underscores the necessity for collaborative endeavors from diverse sectors of society to address and mitigate the surge in juvenile criminal activities. 
+\ It is crucial to highlight that the incidence of juvenile crimes in Toronto has shown an elevation in the year 2022 when juxtaposed against the preceding year.
 
 
 
 ```{r}
 #| label: fig-gender1
-#| fig-cap: Relationship between crimes category and width
+#| fig-cap: Demographic Analysis of Crime Incidents—A Cross-Sectional Study on Gender and Age Groups
 #| echo: false
 #| warning: false
 #| message: false
@@ -182,11 +192,11 @@ police_gender_data |>
   labs(x = "age_cohort", y = "Count")  # Set meaningful axis labels
 
 ```
-
+## Demographic Analysis of Crime Incidents: A Cross-Sectional Study on Gender and Age Groups
 The consideration of gender, alongside age, constitutes a pivotal aspect of our analytical framework. The chart @fig-gender1 provides insights into the gender distribution across various age groups among offenders. Regardless of the age cohort, the proportion of female offenders consistently falls significantly below that of their male counterparts. This trend is particularly pronounced in the juvenile and senior age groups, where the number of female offenders represents only about one-quarter of the male demographic. In the middle-aged group, this figure hovers at approximately one-third of the male population.
 ```{r}
-#| label: fig-gender-category
-#| fig-cap: Relationship between crimes category and gender
+#| label: fig-gender2
+#| fig-cap: Gender-Based Distribution of Crime Types—An In-Depth Analysis Across Different Offenses
 #| echo: false
 #| warning: false
 #| message: false
@@ -210,12 +220,8 @@ sex_data <-
   coord_flip()
 
 ```
-By employing various screening methodologies, we can discern the gender distribution among offenders across distinct crime categories.@fig-gender-category Consistently, the representation of women in the five principal crime types in Toronto is notably lower than that of men. Specifically, the male-to-female ratio is most proximate in offenses against property, standing at approximately 2:1. In contrast, the male-to-female ratio diverges considerably in the category of criminal traffic offenses, where it reaches approximately 5:1.This variance may be attributed to the demographic composition of drivers, where the proportion of female drivers is noticeably smaller than that of their male counterparts.
-
-
-
-
-
+## Gender-Based Distribution of Crime Types: An In-Depth Analysis Across Different Offenses
+By employing various screening methodologies, we can discern the gender distribution among offenders across distinct crime categories. @fig-gender2 Consistently, the representation of women in the five principal crime types in Toronto is notably lower than that of men. Specifically, the male-to-female ratio is most proximate in offenses against property, standing at approximately 2:1. In contrast, the male-to-female ratio diverges considerably in the category of criminal traffic offenses, where it reaches approximately 5:1.This variance may be attributed to the demographic composition of drivers, where the proportion of female drivers is noticeably smaller than that of their male counterparts.For instance,the representation of women among Canadian train drivers stands at a mere three percent (@truck).
 
 
 
